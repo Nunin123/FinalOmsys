@@ -88,7 +88,7 @@ Partial Class frmLogin
         'btnLogin
         '
         Me.btnLogin.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.btnLogin.BackColor = System.Drawing.Color.DeepSkyBlue
+        Me.btnLogin.BackColor = System.Drawing.Color.DarkCyan
         Me.btnLogin.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnLogin.ForeColor = System.Drawing.Color.White
         Me.btnLogin.Location = New System.Drawing.Point(265, 403)
@@ -125,7 +125,7 @@ Partial Class frmLogin
         Me.LinkLabel1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.LinkLabel1.AutoSize = True
         Me.LinkLabel1.Font = New System.Drawing.Font("Century Gothic", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LinkLabel1.LinkColor = System.Drawing.Color.DeepSkyBlue
+        Me.LinkLabel1.LinkColor = System.Drawing.Color.DarkCyan
         Me.LinkLabel1.Location = New System.Drawing.Point(280, 489)
         Me.LinkLabel1.Name = "LinkLabel1"
         Me.LinkLabel1.Size = New System.Drawing.Size(127, 19)

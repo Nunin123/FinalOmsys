@@ -34,14 +34,20 @@ Partial Class ForgotPass
         Me.txtMasterKey = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.btnSubmitSecQA = New System.Windows.Forms.Button()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.txtSecQAnswer = New System.Windows.Forms.TextBox()
         Me.panelMasterKey.SuspendLayout()
         Me.panelResetPass.SuspendLayout()
+        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'panelMasterKey
         '
         Me.panelMasterKey.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.panelMasterKey.Controls.Add(Me.panelResetPass)
+        Me.panelMasterKey.Controls.Add(Me.LinkLabel1)
         Me.panelMasterKey.Controls.Add(Me.btnEnterKey)
         Me.panelMasterKey.Controls.Add(Me.txtMasterKey)
         Me.panelMasterKey.Controls.Add(Me.Label2)
@@ -53,14 +59,13 @@ Partial Class ForgotPass
         '
         'panelResetPass
         '
-        Me.panelResetPass.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.panelResetPass.Controls.Add(Me.btnSubmitNewPass)
         Me.panelResetPass.Controls.Add(Me.txtConfirmPass)
         Me.panelResetPass.Controls.Add(Me.txtNewPass)
         Me.panelResetPass.Controls.Add(Me.Label5)
         Me.panelResetPass.Controls.Add(Me.Label4)
         Me.panelResetPass.Controls.Add(Me.Label3)
-        Me.panelResetPass.Location = New System.Drawing.Point(0, 0)
+        Me.panelResetPass.Location = New System.Drawing.Point(12, 12)
         Me.panelResetPass.Name = "panelResetPass"
         Me.panelResetPass.Size = New System.Drawing.Size(534, 397)
         Me.panelResetPass.TabIndex = 8
@@ -68,8 +73,8 @@ Partial Class ForgotPass
         '
         'btnSubmitNewPass
         '
-        Me.btnSubmitNewPass.BackColor = System.Drawing.Color.DeepSkyBlue
-        Me.btnSubmitNewPass.Font = New System.Drawing.Font("Century Gothic", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSubmitNewPass.BackColor = System.Drawing.Color.DarkCyan
+        Me.btnSubmitNewPass.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnSubmitNewPass.ForeColor = System.Drawing.Color.White
         Me.btnSubmitNewPass.Location = New System.Drawing.Point(222, 259)
         Me.btnSubmitNewPass.Name = "btnSubmitNewPass"
@@ -124,7 +129,7 @@ Partial Class ForgotPass
         '
         'btnEnterKey
         '
-        Me.btnEnterKey.BackColor = System.Drawing.Color.DeepSkyBlue
+        Me.btnEnterKey.BackColor = System.Drawing.Color.DarkCyan
         Me.btnEnterKey.Font = New System.Drawing.Font("Century Gothic", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnEnterKey.ForeColor = System.Drawing.Color.White
         Me.btnEnterKey.Location = New System.Drawing.Point(212, 183)
@@ -166,6 +171,57 @@ Partial Class ForgotPass
         Me.Label1.Text = "Please enter the master key to reset your current password*:"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
+        'LinkLabel1
+        '
+        Me.LinkLabel1.AutoSize = True
+        Me.LinkLabel1.Font = New System.Drawing.Font("Century Gothic", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LinkLabel1.LinkColor = System.Drawing.Color.DarkCyan
+        Me.LinkLabel1.Location = New System.Drawing.Point(199, 237)
+        Me.LinkLabel1.Name = "LinkLabel1"
+        Me.LinkLabel1.Size = New System.Drawing.Size(121, 19)
+        Me.LinkLabel1.TabIndex = 9
+        Me.LinkLabel1.TabStop = True
+        Me.LinkLabel1.Text = "Try Another Way"
+        '
+        'Panel1
+        '
+        Me.Panel1.Controls.Add(Me.txtSecQAnswer)
+        Me.Panel1.Controls.Add(Me.Label6)
+        Me.Panel1.Controls.Add(Me.btnSubmitSecQA)
+        Me.Panel1.Location = New System.Drawing.Point(12, 12)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(531, 397)
+        Me.Panel1.TabIndex = 9
+        Me.Panel1.Visible = False
+        '
+        'btnSubmitSecQA
+        '
+        Me.btnSubmitSecQA.BackColor = System.Drawing.Color.DarkCyan
+        Me.btnSubmitSecQA.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSubmitSecQA.ForeColor = System.Drawing.Color.White
+        Me.btnSubmitSecQA.Location = New System.Drawing.Point(222, 216)
+        Me.btnSubmitSecQA.Name = "btnSubmitSecQA"
+        Me.btnSubmitSecQA.Size = New System.Drawing.Size(75, 36)
+        Me.btnSubmitSecQA.TabIndex = 0
+        Me.btnSubmitSecQA.Text = "Submit"
+        Me.btnSubmitSecQA.UseVisualStyleBackColor = False
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(118, 80)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(294, 21)
+        Me.Label6.TabIndex = 1
+        Me.Label6.Text = "What is the name of your first pet?"
+        '
+        'txtSecQAnswer
+        '
+        Me.txtSecQAnswer.Location = New System.Drawing.Point(133, 149)
+        Me.txtSecQAnswer.Name = "txtSecQAnswer"
+        Me.txtSecQAnswer.Size = New System.Drawing.Size(264, 28)
+        Me.txtSecQAnswer.TabIndex = 2
+        '
         'ForgotPass
         '
         Me.AcceptButton = Me.btnEnterKey
@@ -174,6 +230,8 @@ Partial Class ForgotPass
         Me.AutoScroll = True
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(558, 421)
+        Me.Controls.Add(Me.panelResetPass)
+        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.panelMasterKey)
         Me.Font = New System.Drawing.Font("Century Gothic", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Margin = New System.Windows.Forms.Padding(4)
@@ -184,6 +242,8 @@ Partial Class ForgotPass
         Me.panelMasterKey.PerformLayout()
         Me.panelResetPass.ResumeLayout(False)
         Me.panelResetPass.PerformLayout()
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -200,4 +260,9 @@ Partial Class ForgotPass
     Friend WithEvents Label4 As Label
     Friend WithEvents btnSubmitNewPass As Button
     Friend WithEvents Label3 As Label
+    Friend WithEvents LinkLabel1 As LinkLabel
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents txtSecQAnswer As TextBox
+    Friend WithEvents Label6 As Label
+    Friend WithEvents btnSubmitSecQA As Button
 End Class

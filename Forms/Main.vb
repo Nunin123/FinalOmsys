@@ -14,9 +14,12 @@
         Dim frmManageStocks As New frmMainScreen2
         Dim LoginForm As New frmLogin
 
-        LoginForm.Show()
-        frmManageOrder.Close()
-        frmManageStocks.Close()
-        Close()
+        Dim choice As DialogResult = MessageBox.Show("Are you sure want to logout?", "Logout Confirmation", MessageBoxButtons.YesNo)
+        If choice = DialogResult.Yes Then
+            LoginForm.Show()
+            frmManageOrder.Close()
+            frmManageStocks.Close()
+            Close()
+        End If
     End Sub
 End Class

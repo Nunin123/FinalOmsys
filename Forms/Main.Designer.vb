@@ -33,7 +33,7 @@ Partial Class frmMain
         'btnManageStock
         '
         Me.btnManageStock.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.btnManageStock.BackColor = System.Drawing.Color.DeepSkyBlue
+        Me.btnManageStock.BackColor = System.Drawing.Color.DarkCyan
         Me.btnManageStock.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnManageStock.ForeColor = System.Drawing.Color.White
         Me.btnManageStock.Location = New System.Drawing.Point(224, 365)
@@ -79,7 +79,7 @@ Partial Class frmMain
         'btnManageOrder
         '
         Me.btnManageOrder.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.btnManageOrder.BackColor = System.Drawing.Color.DeepSkyBlue
+        Me.btnManageOrder.BackColor = System.Drawing.Color.DarkCyan
         Me.btnManageOrder.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnManageOrder.ForeColor = System.Drawing.Color.White
         Me.btnManageOrder.Location = New System.Drawing.Point(224, 299)
@@ -92,7 +92,7 @@ Partial Class frmMain
         'btnLogout
         '
         Me.btnLogout.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.btnLogout.BackColor = System.Drawing.Color.DeepSkyBlue
+        Me.btnLogout.BackColor = System.Drawing.Color.DarkCyan
         Me.btnLogout.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnLogout.ForeColor = System.Drawing.Color.White
         Me.btnLogout.Location = New System.Drawing.Point(224, 431)

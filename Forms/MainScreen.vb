@@ -50,6 +50,7 @@
     End Sub
     Private Sub btnAddOrder1_Click_1(sender As Object, e As EventArgs) Handles btnAddOrder1.Click
         OMSys_OrdersV2DBBindingSource.AddNew()
+        cmb_Status.SelectedIndex = 0
         dgv_styleRow()
     End Sub
     Private Sub btnSave_Click(sender As Object, e As EventArgs) Handles btnSave.Click

@@ -23,10 +23,10 @@ Partial Class btnAdd
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle25 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle27 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle28 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle26 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.btnAddOrder = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -34,19 +34,6 @@ Partial Class btnAdd
         Me.OMSys_OrdersV2DBBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.OMSysOrdersDBDataSet = New OMSys.OMSysOrdersDBDataSet()
         Me.OMSys_OrdersV2DBDataGridView = New System.Windows.Forms.DataGridView()
-        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Date_Added = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Customer_FirstName = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Customer_MiddleName = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Customer_LastName = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Date_Delivered = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.OMSys_OrdersDBBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.OMSys_OrdersDBTableAdapter = New OMSys.OMSysOrdersDBDataSetTableAdapters.OMSys_OrdersDBTableAdapter()
         Me.TableAdapterManager = New OMSys.OMSysOrdersDBDataSetTableAdapters.TableAdapterManager()
@@ -94,6 +81,19 @@ Partial Class btnAdd
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Label15 = New System.Windows.Forms.Label()
+        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Date_Added = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Customer_FirstName = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Customer_MiddleName = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Customer_LastName = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Date_Delivered = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.OMSys_OrdersV2DBBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.OMSysOrdersDBDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.OMSys_OrdersV2DBDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -105,7 +105,7 @@ Partial Class btnAdd
         Me.btnAddOrder.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.btnAddOrder.BackColor = System.Drawing.Color.DeepSkyBlue
         Me.btnAddOrder.ForeColor = System.Drawing.Color.White
-        Me.btnAddOrder.Location = New System.Drawing.Point(2427, 202)
+        Me.btnAddOrder.Location = New System.Drawing.Point(2415, 170)
         Me.btnAddOrder.Margin = New System.Windows.Forms.Padding(4)
         Me.btnAddOrder.Name = "btnAddOrder"
         Me.btnAddOrder.Size = New System.Drawing.Size(112, 42)
@@ -118,7 +118,7 @@ Partial Class btnAdd
         Me.Label1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Century Gothic", 28.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(15, 37)
+        Me.Label1.Location = New System.Drawing.Point(6, 26)
         Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(237, 58)
@@ -130,7 +130,7 @@ Partial Class btnAdd
         Me.Label2.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Century Gothic", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(1447, 910)
+        Me.Label2.Location = New System.Drawing.Point(1413, 710)
         Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(209, 19)
@@ -142,7 +142,7 @@ Partial Class btnAdd
         Me.Label3.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Century Gothic", 48.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(1400, 800)
+        Me.Label3.Location = New System.Drawing.Point(1366, 600)
         Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(315, 96)
@@ -164,50 +164,524 @@ Partial Class btnAdd
         Me.OMSys_OrdersV2DBDataGridView.AllowUserToAddRows = False
         Me.OMSys_OrdersV2DBDataGridView.AllowUserToDeleteRows = False
         Me.OMSys_OrdersV2DBDataGridView.AllowUserToResizeColumns = False
-        Me.OMSys_OrdersV2DBDataGridView.AllowUserToResizeRows = False
         Me.OMSys_OrdersV2DBDataGridView.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.OMSys_OrdersV2DBDataGridView.AutoGenerateColumns = False
         Me.OMSys_OrdersV2DBDataGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical
         Me.OMSys_OrdersV2DBDataGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(52, Byte), Integer), CType(CType(52, Byte), Integer))
-        DataGridViewCellStyle5.Font = New System.Drawing.Font("Century Gothic", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.Info
-        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.OMSys_OrdersV2DBDataGridView.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
+        DataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle25.BackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(52, Byte), Integer), CType(CType(52, Byte), Integer))
+        DataGridViewCellStyle25.Font = New System.Drawing.Font("Century Gothic", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle25.ForeColor = System.Drawing.SystemColors.Info
+        DataGridViewCellStyle25.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle25.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle25.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.OMSys_OrdersV2DBDataGridView.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle25
         Me.OMSys_OrdersV2DBDataGridView.ColumnHeadersHeight = 29
         Me.OMSys_OrdersV2DBDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
         Me.OMSys_OrdersV2DBDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.Date_Added, Me.Customer_FirstName, Me.Customer_MiddleName, Me.Customer_LastName, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7, Me.DataGridViewTextBoxColumn8, Me.DataGridViewTextBoxColumn9, Me.Date_Delivered})
         Me.OMSys_OrdersV2DBDataGridView.DataSource = Me.OMSys_OrdersV2DBBindingSource
-        DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle7.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle7.Font = New System.Drawing.Font("Century Gothic", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle7.ForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.OMSys_OrdersV2DBDataGridView.DefaultCellStyle = DataGridViewCellStyle7
+        DataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle27.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle27.Font = New System.Drawing.Font("Century Gothic", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle27.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle27.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle27.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle27.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.OMSys_OrdersV2DBDataGridView.DefaultCellStyle = DataGridViewCellStyle27
         Me.OMSys_OrdersV2DBDataGridView.EnableHeadersVisualStyles = False
-        Me.OMSys_OrdersV2DBDataGridView.Location = New System.Drawing.Point(25, 106)
+        Me.OMSys_OrdersV2DBDataGridView.Location = New System.Drawing.Point(13, 100)
         Me.OMSys_OrdersV2DBDataGridView.Margin = New System.Windows.Forms.Padding(4)
         Me.OMSys_OrdersV2DBDataGridView.Name = "OMSys_OrdersV2DBDataGridView"
         Me.OMSys_OrdersV2DBDataGridView.ReadOnly = True
         Me.OMSys_OrdersV2DBDataGridView.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(52, Byte), Integer), CType(CType(52, Byte), Integer))
-        DataGridViewCellStyle8.Font = New System.Drawing.Font("Century Gothic", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.Info
-        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.OMSys_OrdersV2DBDataGridView.RowHeadersDefaultCellStyle = DataGridViewCellStyle8
+        DataGridViewCellStyle28.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle28.BackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(52, Byte), Integer), CType(CType(52, Byte), Integer))
+        DataGridViewCellStyle28.Font = New System.Drawing.Font("Century Gothic", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle28.ForeColor = System.Drawing.SystemColors.Info
+        DataGridViewCellStyle28.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle28.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle28.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.OMSys_OrdersV2DBDataGridView.RowHeadersDefaultCellStyle = DataGridViewCellStyle28
         Me.OMSys_OrdersV2DBDataGridView.RowHeadersVisible = False
         Me.OMSys_OrdersV2DBDataGridView.RowHeadersWidth = 51
         Me.OMSys_OrdersV2DBDataGridView.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.OMSys_OrdersV2DBDataGridView.Size = New System.Drawing.Size(1668, 556)
+        Me.OMSys_OrdersV2DBDataGridView.Size = New System.Drawing.Size(1668, 405)
         Me.OMSys_OrdersV2DBDataGridView.TabIndex = 94
+        '
+        'OMSys_OrdersDBBindingSource
+        '
+        Me.OMSys_OrdersDBBindingSource.DataMember = "OMSys_OrdersDB"
+        Me.OMSys_OrdersDBBindingSource.DataSource = Me.OMSysOrdersDBDataSet
+        '
+        'OMSys_OrdersDBTableAdapter
+        '
+        Me.OMSys_OrdersDBTableAdapter.ClearBeforeFill = True
+        '
+        'TableAdapterManager
+        '
+        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
+        Me.TableAdapterManager.OMSys_OrdersDBTableAdapter = Me.OMSys_OrdersDBTableAdapter
+        Me.TableAdapterManager.OMSys_OrdersV2DBTableAdapter = Nothing
+        Me.TableAdapterManager.OMSys_StocksDBTableAdapter = Nothing
+        Me.TableAdapterManager.UpdateOrder = OMSys.OMSysOrdersDBDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        '
+        'OMSys_OrdersV2DBTableAdapter
+        '
+        Me.OMSys_OrdersV2DBTableAdapter.ClearBeforeFill = True
+        '
+        'txtSearch
+        '
+        Me.txtSearch.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.txtSearch.Location = New System.Drawing.Point(266, 55)
+        Me.txtSearch.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtSearch.Name = "txtSearch"
+        Me.txtSearch.Size = New System.Drawing.Size(245, 23)
+        Me.txtSearch.TabIndex = 0
+        '
+        'btnSearch
+        '
+        Me.btnSearch.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.btnSearch.BackColor = System.Drawing.Color.DarkCyan
+        Me.btnSearch.Font = New System.Drawing.Font("Century Gothic", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSearch.ForeColor = System.Drawing.Color.White
+        Me.btnSearch.Location = New System.Drawing.Point(533, 41)
+        Me.btnSearch.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnSearch.Name = "btnSearch"
+        Me.btnSearch.Size = New System.Drawing.Size(112, 42)
+        Me.btnSearch.TabIndex = 1
+        Me.btnSearch.Text = "Search"
+        Me.btnSearch.UseVisualStyleBackColor = False
+        '
+        'btnViewAll
+        '
+        Me.btnViewAll.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.btnViewAll.BackColor = System.Drawing.Color.DarkCyan
+        Me.btnViewAll.Font = New System.Drawing.Font("Century Gothic", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnViewAll.ForeColor = System.Drawing.Color.White
+        Me.btnViewAll.Location = New System.Drawing.Point(668, 41)
+        Me.btnViewAll.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnViewAll.Name = "btnViewAll"
+        Me.btnViewAll.Size = New System.Drawing.Size(112, 42)
+        Me.btnViewAll.TabIndex = 2
+        Me.btnViewAll.Text = "View All"
+        Me.btnViewAll.UseVisualStyleBackColor = False
+        '
+        'Label9
+        '
+        Me.Label9.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("Century Gothic", 5.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Location = New System.Drawing.Point(263, 41)
+        Me.Label9.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(252, 13)
+        Me.Label9.TabIndex = 100
+        Me.Label9.Text = "(ID, Customer Name, Product Name, Address or Status)"
+        '
+        'lbl_OrderID
+        '
+        Me.lbl_OrderID.AutoSize = True
+        Me.lbl_OrderID.Location = New System.Drawing.Point(13, 540)
+        Me.lbl_OrderID.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lbl_OrderID.Name = "lbl_OrderID"
+        Me.lbl_OrderID.Size = New System.Drawing.Size(65, 19)
+        Me.lbl_OrderID.TabIndex = 101
+        Me.lbl_OrderID.Text = "Order ID" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        '
+        'txt_ID
+        '
+        Me.txt_ID.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.OMSys_OrdersV2DBBindingSource, "ID", True))
+        Me.txt_ID.Enabled = False
+        Me.txt_ID.Location = New System.Drawing.Point(97, 537)
+        Me.txt_ID.Margin = New System.Windows.Forms.Padding(4)
+        Me.txt_ID.Name = "txt_ID"
+        Me.txt_ID.Size = New System.Drawing.Size(124, 23)
+        Me.txt_ID.TabIndex = 4
+        '
+        'lbl_DateAdded
+        '
+        Me.lbl_DateAdded.AutoSize = True
+        Me.lbl_DateAdded.Location = New System.Drawing.Point(241, 586)
+        Me.lbl_DateAdded.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lbl_DateAdded.Name = "lbl_DateAdded"
+        Me.lbl_DateAdded.Size = New System.Drawing.Size(95, 19)
+        Me.lbl_DateAdded.TabIndex = 103
+        Me.lbl_DateAdded.Text = "Date Added"
+        '
+        'DateTimePicker1
+        '
+        Me.DateTimePicker1.Checked = False
+        Me.DateTimePicker1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.OMSys_OrdersV2DBBindingSource, "Date_Added", True))
+        Me.DateTimePicker1.Location = New System.Drawing.Point(370, 581)
+        Me.DateTimePicker1.Margin = New System.Windows.Forms.Padding(4)
+        Me.DateTimePicker1.Name = "DateTimePicker1"
+        Me.DateTimePicker1.ShowCheckBox = True
+        Me.DateTimePicker1.Size = New System.Drawing.Size(249, 23)
+        Me.DateTimePicker1.TabIndex = 6
+        '
+        'lbl_ProductName
+        '
+        Me.lbl_ProductName.AutoSize = True
+        Me.lbl_ProductName.Location = New System.Drawing.Point(241, 539)
+        Me.lbl_ProductName.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lbl_ProductName.Name = "lbl_ProductName"
+        Me.lbl_ProductName.Size = New System.Drawing.Size(109, 19)
+        Me.lbl_ProductName.TabIndex = 105
+        Me.lbl_ProductName.Text = "Product Name"
+        '
+        'txt_ProductName
+        '
+        Me.txt_ProductName.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.OMSys_OrdersV2DBBindingSource, "Product_Name", True))
+        Me.txt_ProductName.Location = New System.Drawing.Point(370, 536)
+        Me.txt_ProductName.Margin = New System.Windows.Forms.Padding(4)
+        Me.txt_ProductName.Name = "txt_ProductName"
+        Me.txt_ProductName.Size = New System.Drawing.Size(249, 23)
+        Me.txt_ProductName.TabIndex = 5
+        '
+        'lbl_FirstName
+        '
+        Me.lbl_FirstName.AutoSize = True
+        Me.lbl_FirstName.Location = New System.Drawing.Point(654, 540)
+        Me.lbl_FirstName.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lbl_FirstName.Name = "lbl_FirstName"
+        Me.lbl_FirstName.Size = New System.Drawing.Size(79, 19)
+        Me.lbl_FirstName.TabIndex = 107
+        Me.lbl_FirstName.Text = "First Name"
+        '
+        'lbl_MiddleName
+        '
+        Me.lbl_MiddleName.AutoSize = True
+        Me.lbl_MiddleName.Location = New System.Drawing.Point(654, 587)
+        Me.lbl_MiddleName.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lbl_MiddleName.Name = "lbl_MiddleName"
+        Me.lbl_MiddleName.Size = New System.Drawing.Size(103, 19)
+        Me.lbl_MiddleName.TabIndex = 108
+        Me.lbl_MiddleName.Text = "Middle Name"
+        '
+        'lbl_LastName
+        '
+        Me.lbl_LastName.AutoSize = True
+        Me.lbl_LastName.Location = New System.Drawing.Point(654, 630)
+        Me.lbl_LastName.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lbl_LastName.Name = "lbl_LastName"
+        Me.lbl_LastName.Size = New System.Drawing.Size(81, 19)
+        Me.lbl_LastName.TabIndex = 109
+        Me.lbl_LastName.Text = "Last Name"
+        '
+        'txt_FirstName
+        '
+        Me.txt_FirstName.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.OMSys_OrdersV2DBBindingSource, "Customer_FirstName", True))
+        Me.txt_FirstName.Location = New System.Drawing.Point(768, 537)
+        Me.txt_FirstName.Margin = New System.Windows.Forms.Padding(4)
+        Me.txt_FirstName.Name = "txt_FirstName"
+        Me.txt_FirstName.Size = New System.Drawing.Size(149, 23)
+        Me.txt_FirstName.TabIndex = 9
+        '
+        'txt_MiddleName
+        '
+        Me.txt_MiddleName.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.OMSys_OrdersV2DBBindingSource, "Customer_MiddleName", True))
+        Me.txt_MiddleName.Location = New System.Drawing.Point(768, 583)
+        Me.txt_MiddleName.Margin = New System.Windows.Forms.Padding(4)
+        Me.txt_MiddleName.Name = "txt_MiddleName"
+        Me.txt_MiddleName.Size = New System.Drawing.Size(149, 23)
+        Me.txt_MiddleName.TabIndex = 10
+        '
+        'txt_LastName
+        '
+        Me.txt_LastName.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.OMSys_OrdersV2DBBindingSource, "Customer_LastName", True))
+        Me.txt_LastName.Location = New System.Drawing.Point(768, 626)
+        Me.txt_LastName.Margin = New System.Windows.Forms.Padding(4)
+        Me.txt_LastName.Name = "txt_LastName"
+        Me.txt_LastName.Size = New System.Drawing.Size(149, 23)
+        Me.txt_LastName.TabIndex = 11
+        '
+        'lbl_Quantity
+        '
+        Me.lbl_Quantity.AutoSize = True
+        Me.lbl_Quantity.Location = New System.Drawing.Point(654, 709)
+        Me.lbl_Quantity.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lbl_Quantity.Name = "lbl_Quantity"
+        Me.lbl_Quantity.Size = New System.Drawing.Size(70, 19)
+        Me.lbl_Quantity.TabIndex = 113
+        Me.lbl_Quantity.Text = "Quantity"
+        '
+        'txt_Quantity
+        '
+        Me.txt_Quantity.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.OMSys_OrdersV2DBBindingSource, "Quantity", True))
+        Me.txt_Quantity.Location = New System.Drawing.Point(768, 707)
+        Me.txt_Quantity.Margin = New System.Windows.Forms.Padding(4)
+        Me.txt_Quantity.Name = "txt_Quantity"
+        Me.txt_Quantity.Size = New System.Drawing.Size(149, 23)
+        Me.txt_Quantity.TabIndex = 13
+        '
+        'lbl_TotalPrice
+        '
+        Me.lbl_TotalPrice.AutoSize = True
+        Me.lbl_TotalPrice.Location = New System.Drawing.Point(654, 751)
+        Me.lbl_TotalPrice.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lbl_TotalPrice.Name = "lbl_TotalPrice"
+        Me.lbl_TotalPrice.Size = New System.Drawing.Size(78, 19)
+        Me.lbl_TotalPrice.TabIndex = 115
+        Me.lbl_TotalPrice.Text = "Total Price"
+        '
+        'txt_TotalPrice
+        '
+        Me.txt_TotalPrice.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.OMSys_OrdersV2DBBindingSource, "Total_Price", True))
+        Me.txt_TotalPrice.Enabled = False
+        Me.txt_TotalPrice.Location = New System.Drawing.Point(768, 751)
+        Me.txt_TotalPrice.Margin = New System.Windows.Forms.Padding(4)
+        Me.txt_TotalPrice.Name = "txt_TotalPrice"
+        Me.txt_TotalPrice.Size = New System.Drawing.Size(149, 23)
+        Me.txt_TotalPrice.TabIndex = 14
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(975, 541)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(61, 19)
+        Me.Label4.TabIndex = 117
+        Me.Label4.Text = "Address"
+        '
+        'txt_Address
+        '
+        Me.txt_Address.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.OMSys_OrdersV2DBBindingSource, "Address", True))
+        Me.txt_Address.Location = New System.Drawing.Point(1121, 537)
+        Me.txt_Address.Margin = New System.Windows.Forms.Padding(4)
+        Me.txt_Address.Name = "txt_Address"
+        Me.txt_Address.Size = New System.Drawing.Size(226, 23)
+        Me.txt_Address.TabIndex = 15
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(975, 586)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(126, 19)
+        Me.Label5.TabIndex = 119
+        Me.Label5.Text = "Contact Number"
+        '
+        'txt_ContactNumber
+        '
+        Me.txt_ContactNumber.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.OMSys_OrdersV2DBBindingSource, "Contact_Number", True))
+        Me.txt_ContactNumber.Location = New System.Drawing.Point(1121, 582)
+        Me.txt_ContactNumber.Margin = New System.Windows.Forms.Padding(4)
+        Me.txt_ContactNumber.Name = "txt_ContactNumber"
+        Me.txt_ContactNumber.Size = New System.Drawing.Size(226, 23)
+        Me.txt_ContactNumber.TabIndex = 16
+        '
+        'DateTimePicker2
+        '
+        Me.DateTimePicker2.Checked = False
+        Me.DateTimePicker2.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.OMSys_OrdersV2DBBindingSource, "Date_Delivered", True))
+        Me.DateTimePicker2.Location = New System.Drawing.Point(370, 627)
+        Me.DateTimePicker2.Margin = New System.Windows.Forms.Padding(4)
+        Me.DateTimePicker2.Name = "DateTimePicker2"
+        Me.DateTimePicker2.ShowCheckBox = True
+        Me.DateTimePicker2.Size = New System.Drawing.Size(249, 23)
+        Me.DateTimePicker2.TabIndex = 7
+        '
+        'lbl_DateDelivered
+        '
+        Me.lbl_DateDelivered.AutoSize = True
+        Me.lbl_DateDelivered.Location = New System.Drawing.Point(241, 631)
+        Me.lbl_DateDelivered.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lbl_DateDelivered.Name = "lbl_DateDelivered"
+        Me.lbl_DateDelivered.Size = New System.Drawing.Size(112, 19)
+        Me.lbl_DateDelivered.TabIndex = 121
+        Me.lbl_DateDelivered.Text = "Date Delivered"
+        '
+        'btnAddOrder1
+        '
+        Me.btnAddOrder1.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.btnAddOrder1.BackColor = System.Drawing.Color.DarkCyan
+        Me.btnAddOrder1.Font = New System.Drawing.Font("Century Gothic", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAddOrder1.ForeColor = System.Drawing.Color.White
+        Me.btnAddOrder1.Location = New System.Drawing.Point(1569, 45)
+        Me.btnAddOrder1.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnAddOrder1.Name = "btnAddOrder1"
+        Me.btnAddOrder1.Size = New System.Drawing.Size(112, 42)
+        Me.btnAddOrder1.TabIndex = 3
+        Me.btnAddOrder1.Text = "New Order"
+        Me.btnAddOrder1.UseVisualStyleBackColor = False
+        '
+        'btnSave
+        '
+        Me.btnSave.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.btnSave.BackColor = System.Drawing.Color.DarkCyan
+        Me.btnSave.Font = New System.Drawing.Font("Century Gothic", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSave.ForeColor = System.Drawing.Color.White
+        Me.btnSave.Location = New System.Drawing.Point(1000, 710)
+        Me.btnSave.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnSave.Name = "btnSave"
+        Me.btnSave.Size = New System.Drawing.Size(112, 42)
+        Me.btnSave.TabIndex = 18
+        Me.btnSave.Text = "Save"
+        Me.btnSave.UseVisualStyleBackColor = False
+        '
+        'cmb_Status
+        '
+        Me.cmb_Status.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.OMSys_OrdersV2DBBindingSource, "Status", True))
+        Me.cmb_Status.FormattingEnabled = True
+        Me.cmb_Status.Items.AddRange(New Object() {"PENDING", "PAID", "COMPLETED", "CANCELLED"})
+        Me.cmb_Status.Location = New System.Drawing.Point(1121, 625)
+        Me.cmb_Status.Margin = New System.Windows.Forms.Padding(4)
+        Me.cmb_Status.Name = "cmb_Status"
+        Me.cmb_Status.Size = New System.Drawing.Size(150, 25)
+        Me.cmb_Status.TabIndex = 17
+        '
+        'lblStatus
+        '
+        Me.lblStatus.AutoSize = True
+        Me.lblStatus.Location = New System.Drawing.Point(975, 626)
+        Me.lblStatus.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblStatus.Name = "lblStatus"
+        Me.lblStatus.Size = New System.Drawing.Size(50, 19)
+        Me.lblStatus.TabIndex = 126
+        Me.lblStatus.Text = "Status"
+        '
+        'btnDelete
+        '
+        Me.btnDelete.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.btnDelete.BackColor = System.Drawing.Color.DarkCyan
+        Me.btnDelete.Font = New System.Drawing.Font("Century Gothic", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnDelete.ForeColor = System.Drawing.Color.White
+        Me.btnDelete.Location = New System.Drawing.Point(1159, 710)
+        Me.btnDelete.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnDelete.Name = "btnDelete"
+        Me.btnDelete.Size = New System.Drawing.Size(112, 42)
+        Me.btnDelete.TabIndex = 19
+        Me.btnDelete.Text = "Delete"
+        Me.btnDelete.UseVisualStyleBackColor = False
+        '
+        'lblNotes
+        '
+        Me.lblNotes.AutoSize = True
+        Me.lblNotes.Location = New System.Drawing.Point(241, 671)
+        Me.lblNotes.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblNotes.Name = "lblNotes"
+        Me.lblNotes.Size = New System.Drawing.Size(42, 19)
+        Me.lblNotes.TabIndex = 128
+        Me.lblNotes.Text = "Note"
+        '
+        'RichTextBox1
+        '
+        Me.RichTextBox1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.OMSys_OrdersV2DBBindingSource, "Notes", True))
+        Me.RichTextBox1.Location = New System.Drawing.Point(370, 675)
+        Me.RichTextBox1.Margin = New System.Windows.Forms.Padding(4)
+        Me.RichTextBox1.Name = "RichTextBox1"
+        Me.RichTextBox1.Size = New System.Drawing.Size(249, 95)
+        Me.RichTextBox1.TabIndex = 8
+        Me.RichTextBox1.Text = ""
+        '
+        'txtPrice
+        '
+        Me.txtPrice.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.OMSys_OrdersV2DBBindingSource, "Total_Price", True))
+        Me.txtPrice.Location = New System.Drawing.Point(768, 666)
+        Me.txtPrice.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtPrice.Name = "txtPrice"
+        Me.txtPrice.Size = New System.Drawing.Size(149, 23)
+        Me.txtPrice.TabIndex = 12
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(654, 668)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(42, 19)
+        Me.Label6.TabIndex = 130
+        Me.Label6.Text = "Price"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.ForeColor = System.Drawing.Color.Red
+        Me.Label7.Location = New System.Drawing.Point(74, 538)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(15, 19)
+        Me.Label7.TabIndex = 132
+        Me.Label7.Text = "*"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.ForeColor = System.Drawing.Color.Red
+        Me.Label8.Location = New System.Drawing.Point(347, 537)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(15, 19)
+        Me.Label8.TabIndex = 133
+        Me.Label8.Text = "*"
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.ForeColor = System.Drawing.Color.Red
+        Me.Label10.Location = New System.Drawing.Point(731, 538)
+        Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(15, 19)
+        Me.Label10.TabIndex = 134
+        Me.Label10.Text = "*"
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.ForeColor = System.Drawing.Color.Red
+        Me.Label11.Location = New System.Drawing.Point(733, 629)
+        Me.Label11.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(15, 19)
+        Me.Label11.TabIndex = 135
+        Me.Label11.Text = "*"
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.ForeColor = System.Drawing.Color.Red
+        Me.Label12.Location = New System.Drawing.Point(720, 707)
+        Me.Label12.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(15, 19)
+        Me.Label12.TabIndex = 136
+        Me.Label12.Text = "*"
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.ForeColor = System.Drawing.Color.Red
+        Me.Label13.Location = New System.Drawing.Point(1024, 625)
+        Me.Label13.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(15, 19)
+        Me.Label13.TabIndex = 137
+        Me.Label13.Text = "*"
+        '
+        'Label14
+        '
+        Me.Label14.AutoSize = True
+        Me.Label14.ForeColor = System.Drawing.Color.Red
+        Me.Label14.Location = New System.Drawing.Point(1034, 541)
+        Me.Label14.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(15, 19)
+        Me.Label14.TabIndex = 138
+        Me.Label14.Text = "*"
+        '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.ForeColor = System.Drawing.Color.Red
+        Me.Label15.Location = New System.Drawing.Point(1099, 584)
+        Me.Label15.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(15, 19)
+        Me.Label15.TabIndex = 139
+        Me.Label15.Text = "*"
         '
         'DataGridViewTextBoxColumn1
         '
@@ -216,7 +690,6 @@ Partial Class btnAdd
         Me.DataGridViewTextBoxColumn1.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
         Me.DataGridViewTextBoxColumn1.ReadOnly = True
-        Me.DataGridViewTextBoxColumn1.Width = 125
         '
         'Date_Added
         '
@@ -225,7 +698,7 @@ Partial Class btnAdd
         Me.Date_Added.MinimumWidth = 6
         Me.Date_Added.Name = "Date_Added"
         Me.Date_Added.ReadOnly = True
-        Me.Date_Added.Width = 125
+        Me.Date_Added.Width = 150
         '
         'Customer_FirstName
         '
@@ -243,7 +716,6 @@ Partial Class btnAdd
         Me.Customer_MiddleName.MinimumWidth = 6
         Me.Customer_MiddleName.Name = "Customer_MiddleName"
         Me.Customer_MiddleName.ReadOnly = True
-        Me.Customer_MiddleName.Width = 125
         '
         'Customer_LastName
         '
@@ -275,9 +747,9 @@ Partial Class btnAdd
         'DataGridViewTextBoxColumn5
         '
         Me.DataGridViewTextBoxColumn5.DataPropertyName = "Total_Price"
-        DataGridViewCellStyle6.Format = "C2"
-        DataGridViewCellStyle6.NullValue = Nothing
-        Me.DataGridViewTextBoxColumn5.DefaultCellStyle = DataGridViewCellStyle6
+        DataGridViewCellStyle26.Format = "C2"
+        DataGridViewCellStyle26.NullValue = Nothing
+        Me.DataGridViewTextBoxColumn5.DefaultCellStyle = DataGridViewCellStyle26
         Me.DataGridViewTextBoxColumn5.HeaderText = "Total Price"
         Me.DataGridViewTextBoxColumn5.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
@@ -291,7 +763,7 @@ Partial Class btnAdd
         Me.DataGridViewTextBoxColumn6.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
         Me.DataGridViewTextBoxColumn6.ReadOnly = True
-        Me.DataGridViewTextBoxColumn6.Width = 175
+        Me.DataGridViewTextBoxColumn6.Width = 160
         '
         'DataGridViewTextBoxColumn7
         '
@@ -327,486 +799,14 @@ Partial Class btnAdd
         Me.Date_Delivered.MinimumWidth = 6
         Me.Date_Delivered.Name = "Date_Delivered"
         Me.Date_Delivered.ReadOnly = True
-        Me.Date_Delivered.Width = 125
-        '
-        'OMSys_OrdersDBBindingSource
-        '
-        Me.OMSys_OrdersDBBindingSource.DataMember = "OMSys_OrdersDB"
-        Me.OMSys_OrdersDBBindingSource.DataSource = Me.OMSysOrdersDBDataSet
-        '
-        'OMSys_OrdersDBTableAdapter
-        '
-        Me.OMSys_OrdersDBTableAdapter.ClearBeforeFill = True
-        '
-        'TableAdapterManager
-        '
-        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
-        Me.TableAdapterManager.OMSys_OrdersDBTableAdapter = Me.OMSys_OrdersDBTableAdapter
-        Me.TableAdapterManager.OMSys_OrdersV2DBTableAdapter = Nothing
-        Me.TableAdapterManager.OMSys_StocksDBTableAdapter = Nothing
-        Me.TableAdapterManager.UpdateOrder = OMSys.OMSysOrdersDBDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
-        '
-        'OMSys_OrdersV2DBTableAdapter
-        '
-        Me.OMSys_OrdersV2DBTableAdapter.ClearBeforeFill = True
-        '
-        'txtSearch
-        '
-        Me.txtSearch.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.txtSearch.Location = New System.Drawing.Point(275, 66)
-        Me.txtSearch.Margin = New System.Windows.Forms.Padding(2)
-        Me.txtSearch.Name = "txtSearch"
-        Me.txtSearch.Size = New System.Drawing.Size(245, 23)
-        Me.txtSearch.TabIndex = 0
-        '
-        'btnSearch
-        '
-        Me.btnSearch.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.btnSearch.BackColor = System.Drawing.Color.DarkCyan
-        Me.btnSearch.Font = New System.Drawing.Font("Century Gothic", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSearch.ForeColor = System.Drawing.Color.White
-        Me.btnSearch.Location = New System.Drawing.Point(542, 52)
-        Me.btnSearch.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnSearch.Name = "btnSearch"
-        Me.btnSearch.Size = New System.Drawing.Size(112, 42)
-        Me.btnSearch.TabIndex = 1
-        Me.btnSearch.Text = "Search"
-        Me.btnSearch.UseVisualStyleBackColor = False
-        '
-        'btnViewAll
-        '
-        Me.btnViewAll.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.btnViewAll.BackColor = System.Drawing.Color.DarkCyan
-        Me.btnViewAll.Font = New System.Drawing.Font("Century Gothic", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnViewAll.ForeColor = System.Drawing.Color.White
-        Me.btnViewAll.Location = New System.Drawing.Point(677, 52)
-        Me.btnViewAll.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnViewAll.Name = "btnViewAll"
-        Me.btnViewAll.Size = New System.Drawing.Size(112, 42)
-        Me.btnViewAll.TabIndex = 2
-        Me.btnViewAll.Text = "View All"
-        Me.btnViewAll.UseVisualStyleBackColor = False
-        '
-        'Label9
-        '
-        Me.Label9.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Century Gothic", 5.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(272, 52)
-        Me.Label9.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(252, 13)
-        Me.Label9.TabIndex = 100
-        Me.Label9.Text = "(ID, Customer Name, Product Name, Address or Status)"
-        '
-        'lbl_OrderID
-        '
-        Me.lbl_OrderID.AutoSize = True
-        Me.lbl_OrderID.Location = New System.Drawing.Point(30, 699)
-        Me.lbl_OrderID.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.lbl_OrderID.Name = "lbl_OrderID"
-        Me.lbl_OrderID.Size = New System.Drawing.Size(65, 19)
-        Me.lbl_OrderID.TabIndex = 101
-        Me.lbl_OrderID.Text = "Order ID" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
-        '
-        'txt_ID
-        '
-        Me.txt_ID.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.OMSys_OrdersV2DBBindingSource, "ID", True))
-        Me.txt_ID.Enabled = False
-        Me.txt_ID.Location = New System.Drawing.Point(114, 696)
-        Me.txt_ID.Margin = New System.Windows.Forms.Padding(4)
-        Me.txt_ID.Name = "txt_ID"
-        Me.txt_ID.Size = New System.Drawing.Size(124, 23)
-        Me.txt_ID.TabIndex = 102
-        '
-        'lbl_DateAdded
-        '
-        Me.lbl_DateAdded.AutoSize = True
-        Me.lbl_DateAdded.Location = New System.Drawing.Point(258, 745)
-        Me.lbl_DateAdded.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.lbl_DateAdded.Name = "lbl_DateAdded"
-        Me.lbl_DateAdded.Size = New System.Drawing.Size(95, 19)
-        Me.lbl_DateAdded.TabIndex = 103
-        Me.lbl_DateAdded.Text = "Date Added"
-        '
-        'DateTimePicker1
-        '
-        Me.DateTimePicker1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.OMSys_OrdersV2DBBindingSource, "Date_Added", True))
-        Me.DateTimePicker1.Location = New System.Drawing.Point(387, 740)
-        Me.DateTimePicker1.Margin = New System.Windows.Forms.Padding(4)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(249, 23)
-        Me.DateTimePicker1.TabIndex = 104
-        '
-        'lbl_ProductName
-        '
-        Me.lbl_ProductName.AutoSize = True
-        Me.lbl_ProductName.Location = New System.Drawing.Point(258, 698)
-        Me.lbl_ProductName.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.lbl_ProductName.Name = "lbl_ProductName"
-        Me.lbl_ProductName.Size = New System.Drawing.Size(109, 19)
-        Me.lbl_ProductName.TabIndex = 105
-        Me.lbl_ProductName.Text = "Product Name"
-        '
-        'txt_ProductName
-        '
-        Me.txt_ProductName.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.OMSys_OrdersV2DBBindingSource, "Product_Name", True))
-        Me.txt_ProductName.Location = New System.Drawing.Point(387, 695)
-        Me.txt_ProductName.Margin = New System.Windows.Forms.Padding(4)
-        Me.txt_ProductName.Name = "txt_ProductName"
-        Me.txt_ProductName.Size = New System.Drawing.Size(249, 23)
-        Me.txt_ProductName.TabIndex = 106
-        '
-        'lbl_FirstName
-        '
-        Me.lbl_FirstName.AutoSize = True
-        Me.lbl_FirstName.Location = New System.Drawing.Point(671, 699)
-        Me.lbl_FirstName.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.lbl_FirstName.Name = "lbl_FirstName"
-        Me.lbl_FirstName.Size = New System.Drawing.Size(79, 19)
-        Me.lbl_FirstName.TabIndex = 107
-        Me.lbl_FirstName.Text = "First Name"
-        '
-        'lbl_MiddleName
-        '
-        Me.lbl_MiddleName.AutoSize = True
-        Me.lbl_MiddleName.Location = New System.Drawing.Point(671, 746)
-        Me.lbl_MiddleName.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.lbl_MiddleName.Name = "lbl_MiddleName"
-        Me.lbl_MiddleName.Size = New System.Drawing.Size(103, 19)
-        Me.lbl_MiddleName.TabIndex = 108
-        Me.lbl_MiddleName.Text = "Middle Name"
-        '
-        'lbl_LastName
-        '
-        Me.lbl_LastName.AutoSize = True
-        Me.lbl_LastName.Location = New System.Drawing.Point(671, 789)
-        Me.lbl_LastName.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.lbl_LastName.Name = "lbl_LastName"
-        Me.lbl_LastName.Size = New System.Drawing.Size(81, 19)
-        Me.lbl_LastName.TabIndex = 109
-        Me.lbl_LastName.Text = "Last Name"
-        '
-        'txt_FirstName
-        '
-        Me.txt_FirstName.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.OMSys_OrdersV2DBBindingSource, "Customer_FirstName", True))
-        Me.txt_FirstName.Location = New System.Drawing.Point(785, 696)
-        Me.txt_FirstName.Margin = New System.Windows.Forms.Padding(4)
-        Me.txt_FirstName.Name = "txt_FirstName"
-        Me.txt_FirstName.Size = New System.Drawing.Size(149, 23)
-        Me.txt_FirstName.TabIndex = 110
-        '
-        'txt_MiddleName
-        '
-        Me.txt_MiddleName.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.OMSys_OrdersV2DBBindingSource, "Customer_MiddleName", True))
-        Me.txt_MiddleName.Location = New System.Drawing.Point(785, 742)
-        Me.txt_MiddleName.Margin = New System.Windows.Forms.Padding(4)
-        Me.txt_MiddleName.Name = "txt_MiddleName"
-        Me.txt_MiddleName.Size = New System.Drawing.Size(149, 23)
-        Me.txt_MiddleName.TabIndex = 111
-        '
-        'txt_LastName
-        '
-        Me.txt_LastName.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.OMSys_OrdersV2DBBindingSource, "Customer_LastName", True))
-        Me.txt_LastName.Location = New System.Drawing.Point(785, 785)
-        Me.txt_LastName.Margin = New System.Windows.Forms.Padding(4)
-        Me.txt_LastName.Name = "txt_LastName"
-        Me.txt_LastName.Size = New System.Drawing.Size(149, 23)
-        Me.txt_LastName.TabIndex = 112
-        '
-        'lbl_Quantity
-        '
-        Me.lbl_Quantity.AutoSize = True
-        Me.lbl_Quantity.Location = New System.Drawing.Point(671, 868)
-        Me.lbl_Quantity.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.lbl_Quantity.Name = "lbl_Quantity"
-        Me.lbl_Quantity.Size = New System.Drawing.Size(70, 19)
-        Me.lbl_Quantity.TabIndex = 113
-        Me.lbl_Quantity.Text = "Quantity"
-        '
-        'txt_Quantity
-        '
-        Me.txt_Quantity.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.OMSys_OrdersV2DBBindingSource, "Quantity", True))
-        Me.txt_Quantity.Location = New System.Drawing.Point(785, 866)
-        Me.txt_Quantity.Margin = New System.Windows.Forms.Padding(4)
-        Me.txt_Quantity.Name = "txt_Quantity"
-        Me.txt_Quantity.Size = New System.Drawing.Size(149, 23)
-        Me.txt_Quantity.TabIndex = 114
-        '
-        'lbl_TotalPrice
-        '
-        Me.lbl_TotalPrice.AutoSize = True
-        Me.lbl_TotalPrice.Location = New System.Drawing.Point(671, 910)
-        Me.lbl_TotalPrice.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.lbl_TotalPrice.Name = "lbl_TotalPrice"
-        Me.lbl_TotalPrice.Size = New System.Drawing.Size(78, 19)
-        Me.lbl_TotalPrice.TabIndex = 115
-        Me.lbl_TotalPrice.Text = "Total Price"
-        '
-        'txt_TotalPrice
-        '
-        Me.txt_TotalPrice.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.OMSys_OrdersV2DBBindingSource, "Total_Price", True))
-        Me.txt_TotalPrice.Enabled = False
-        Me.txt_TotalPrice.Location = New System.Drawing.Point(785, 910)
-        Me.txt_TotalPrice.Margin = New System.Windows.Forms.Padding(4)
-        Me.txt_TotalPrice.Name = "txt_TotalPrice"
-        Me.txt_TotalPrice.Size = New System.Drawing.Size(149, 23)
-        Me.txt_TotalPrice.TabIndex = 116
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(992, 699)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(61, 19)
-        Me.Label4.TabIndex = 117
-        Me.Label4.Text = "Address"
-        '
-        'txt_Address
-        '
-        Me.txt_Address.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.OMSys_OrdersV2DBBindingSource, "Address", True))
-        Me.txt_Address.Location = New System.Drawing.Point(1138, 695)
-        Me.txt_Address.Margin = New System.Windows.Forms.Padding(4)
-        Me.txt_Address.Name = "txt_Address"
-        Me.txt_Address.Size = New System.Drawing.Size(226, 23)
-        Me.txt_Address.TabIndex = 118
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(992, 744)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(126, 19)
-        Me.Label5.TabIndex = 119
-        Me.Label5.Text = "Contact Number"
-        '
-        'txt_ContactNumber
-        '
-        Me.txt_ContactNumber.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.OMSys_OrdersV2DBBindingSource, "Contact_Number", True))
-        Me.txt_ContactNumber.Location = New System.Drawing.Point(1138, 740)
-        Me.txt_ContactNumber.Margin = New System.Windows.Forms.Padding(4)
-        Me.txt_ContactNumber.Name = "txt_ContactNumber"
-        Me.txt_ContactNumber.Size = New System.Drawing.Size(226, 23)
-        Me.txt_ContactNumber.TabIndex = 120
-        '
-        'DateTimePicker2
-        '
-        Me.DateTimePicker2.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.OMSys_OrdersV2DBBindingSource, "Date_Delivered", True))
-        Me.DateTimePicker2.Location = New System.Drawing.Point(387, 786)
-        Me.DateTimePicker2.Margin = New System.Windows.Forms.Padding(4)
-        Me.DateTimePicker2.Name = "DateTimePicker2"
-        Me.DateTimePicker2.Size = New System.Drawing.Size(249, 23)
-        Me.DateTimePicker2.TabIndex = 122
-        '
-        'lbl_DateDelivered
-        '
-        Me.lbl_DateDelivered.AutoSize = True
-        Me.lbl_DateDelivered.Location = New System.Drawing.Point(258, 790)
-        Me.lbl_DateDelivered.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.lbl_DateDelivered.Name = "lbl_DateDelivered"
-        Me.lbl_DateDelivered.Size = New System.Drawing.Size(112, 19)
-        Me.lbl_DateDelivered.TabIndex = 121
-        Me.lbl_DateDelivered.Text = "Date Delivered"
-        '
-        'btnAddOrder1
-        '
-        Me.btnAddOrder1.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.btnAddOrder1.BackColor = System.Drawing.Color.DarkCyan
-        Me.btnAddOrder1.Font = New System.Drawing.Font("Century Gothic", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAddOrder1.ForeColor = System.Drawing.Color.White
-        Me.btnAddOrder1.Location = New System.Drawing.Point(1581, 56)
-        Me.btnAddOrder1.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnAddOrder1.Name = "btnAddOrder1"
-        Me.btnAddOrder1.Size = New System.Drawing.Size(112, 42)
-        Me.btnAddOrder1.TabIndex = 123
-        Me.btnAddOrder1.Text = "New Order"
-        Me.btnAddOrder1.UseVisualStyleBackColor = False
-        '
-        'btnSave
-        '
-        Me.btnSave.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.btnSave.BackColor = System.Drawing.Color.DarkCyan
-        Me.btnSave.Font = New System.Drawing.Font("Century Gothic", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSave.ForeColor = System.Drawing.Color.White
-        Me.btnSave.Location = New System.Drawing.Point(1024, 856)
-        Me.btnSave.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnSave.Name = "btnSave"
-        Me.btnSave.Size = New System.Drawing.Size(112, 42)
-        Me.btnSave.TabIndex = 124
-        Me.btnSave.Text = "Save"
-        Me.btnSave.UseVisualStyleBackColor = False
-        '
-        'cmb_Status
-        '
-        Me.cmb_Status.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.OMSys_OrdersV2DBBindingSource, "Status", True))
-        Me.cmb_Status.FormattingEnabled = True
-        Me.cmb_Status.Items.AddRange(New Object() {"PENDING", "PAID", "COMPLETED", "CANCELLED"})
-        Me.cmb_Status.Location = New System.Drawing.Point(1138, 783)
-        Me.cmb_Status.Margin = New System.Windows.Forms.Padding(4)
-        Me.cmb_Status.Name = "cmb_Status"
-        Me.cmb_Status.Size = New System.Drawing.Size(150, 25)
-        Me.cmb_Status.TabIndex = 125
-        '
-        'lblStatus
-        '
-        Me.lblStatus.AutoSize = True
-        Me.lblStatus.Location = New System.Drawing.Point(992, 784)
-        Me.lblStatus.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.lblStatus.Name = "lblStatus"
-        Me.lblStatus.Size = New System.Drawing.Size(50, 19)
-        Me.lblStatus.TabIndex = 126
-        Me.lblStatus.Text = "Status"
-        '
-        'btnDelete
-        '
-        Me.btnDelete.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.btnDelete.BackColor = System.Drawing.Color.DarkCyan
-        Me.btnDelete.Font = New System.Drawing.Font("Century Gothic", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnDelete.ForeColor = System.Drawing.Color.White
-        Me.btnDelete.Location = New System.Drawing.Point(1183, 856)
-        Me.btnDelete.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnDelete.Name = "btnDelete"
-        Me.btnDelete.Size = New System.Drawing.Size(112, 42)
-        Me.btnDelete.TabIndex = 127
-        Me.btnDelete.Text = "Delete"
-        Me.btnDelete.UseVisualStyleBackColor = False
-        '
-        'lblNotes
-        '
-        Me.lblNotes.AutoSize = True
-        Me.lblNotes.Location = New System.Drawing.Point(258, 830)
-        Me.lblNotes.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.lblNotes.Name = "lblNotes"
-        Me.lblNotes.Size = New System.Drawing.Size(42, 19)
-        Me.lblNotes.TabIndex = 128
-        Me.lblNotes.Text = "Note"
-        '
-        'RichTextBox1
-        '
-        Me.RichTextBox1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.OMSys_OrdersV2DBBindingSource, "Notes", True))
-        Me.RichTextBox1.Location = New System.Drawing.Point(387, 834)
-        Me.RichTextBox1.Margin = New System.Windows.Forms.Padding(4)
-        Me.RichTextBox1.Name = "RichTextBox1"
-        Me.RichTextBox1.Size = New System.Drawing.Size(249, 106)
-        Me.RichTextBox1.TabIndex = 129
-        Me.RichTextBox1.Text = ""
-        '
-        'txtPrice
-        '
-        Me.txtPrice.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.OMSys_OrdersV2DBBindingSource, "Total_Price", True))
-        Me.txtPrice.Location = New System.Drawing.Point(785, 825)
-        Me.txtPrice.Margin = New System.Windows.Forms.Padding(4)
-        Me.txtPrice.Name = "txtPrice"
-        Me.txtPrice.Size = New System.Drawing.Size(149, 23)
-        Me.txtPrice.TabIndex = 131
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(671, 827)
-        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(42, 19)
-        Me.Label6.TabIndex = 130
-        Me.Label6.Text = "Price"
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.ForeColor = System.Drawing.Color.Red
-        Me.Label7.Location = New System.Drawing.Point(91, 697)
-        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(15, 19)
-        Me.Label7.TabIndex = 132
-        Me.Label7.Text = "*"
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.ForeColor = System.Drawing.Color.Red
-        Me.Label8.Location = New System.Drawing.Point(364, 696)
-        Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(15, 19)
-        Me.Label8.TabIndex = 133
-        Me.Label8.Text = "*"
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.ForeColor = System.Drawing.Color.Red
-        Me.Label10.Location = New System.Drawing.Point(748, 697)
-        Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(15, 19)
-        Me.Label10.TabIndex = 134
-        Me.Label10.Text = "*"
-        '
-        'Label11
-        '
-        Me.Label11.AutoSize = True
-        Me.Label11.ForeColor = System.Drawing.Color.Red
-        Me.Label11.Location = New System.Drawing.Point(750, 788)
-        Me.Label11.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(15, 19)
-        Me.Label11.TabIndex = 135
-        Me.Label11.Text = "*"
-        '
-        'Label12
-        '
-        Me.Label12.AutoSize = True
-        Me.Label12.ForeColor = System.Drawing.Color.Red
-        Me.Label12.Location = New System.Drawing.Point(737, 866)
-        Me.Label12.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(15, 19)
-        Me.Label12.TabIndex = 136
-        Me.Label12.Text = "*"
-        '
-        'Label13
-        '
-        Me.Label13.AutoSize = True
-        Me.Label13.ForeColor = System.Drawing.Color.Red
-        Me.Label13.Location = New System.Drawing.Point(1041, 783)
-        Me.Label13.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(15, 19)
-        Me.Label13.TabIndex = 137
-        Me.Label13.Text = "*"
-        '
-        'Label14
-        '
-        Me.Label14.AutoSize = True
-        Me.Label14.ForeColor = System.Drawing.Color.Red
-        Me.Label14.Location = New System.Drawing.Point(1051, 699)
-        Me.Label14.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(15, 19)
-        Me.Label14.TabIndex = 138
-        Me.Label14.Text = "*"
-        '
-        'Label15
-        '
-        Me.Label15.AutoSize = True
-        Me.Label15.ForeColor = System.Drawing.Color.Red
-        Me.Label15.Location = New System.Drawing.Point(1116, 742)
-        Me.Label15.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(15, 19)
-        Me.Label15.TabIndex = 139
-        Me.Label15.Text = "*"
+        Me.Date_Delivered.Width = 150
         '
         'btnAdd
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(120.0!, 120.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
-        Me.AutoScroll = True
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(1720, 981)
+        Me.ClientSize = New System.Drawing.Size(1695, 830)
         Me.Controls.Add(Me.Label15)
         Me.Controls.Add(Me.Label14)
         Me.Controls.Add(Me.Label13)
@@ -915,6 +915,14 @@ Partial Class btnAdd
     Friend WithEvents RichTextBox1 As RichTextBox
     Friend WithEvents txtPrice As TextBox
     Friend WithEvents Label6 As Label
+    Friend WithEvents Label7 As Label
+    Friend WithEvents Label8 As Label
+    Friend WithEvents Label10 As Label
+    Friend WithEvents Label11 As Label
+    Friend WithEvents Label12 As Label
+    Friend WithEvents Label13 As Label
+    Friend WithEvents Label14 As Label
+    Friend WithEvents Label15 As Label
     Friend WithEvents DataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
     Friend WithEvents Date_Added As DataGridViewTextBoxColumn
     Friend WithEvents Customer_FirstName As DataGridViewTextBoxColumn
@@ -928,12 +936,4 @@ Partial Class btnAdd
     Friend WithEvents DataGridViewTextBoxColumn8 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn9 As DataGridViewTextBoxColumn
     Friend WithEvents Date_Delivered As DataGridViewTextBoxColumn
-    Friend WithEvents Label7 As Label
-    Friend WithEvents Label8 As Label
-    Friend WithEvents Label10 As Label
-    Friend WithEvents Label11 As Label
-    Friend WithEvents Label12 As Label
-    Friend WithEvents Label13 As Label
-    Friend WithEvents Label14 As Label
-    Friend WithEvents Label15 As Label
 End Class

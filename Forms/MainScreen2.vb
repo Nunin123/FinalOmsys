@@ -48,7 +48,7 @@ Public Class frmMainScreen2
     Private Sub btnUpdateOrder_Click_1(sender As Object, e As EventArgs) Handles btnUpdateOrder.Click
 
 
-        If txt_StockName.Text = "" Or txt_Stock.Text = "" Or cmb_Size.Text = "" Or txt_Color.Text = "" Or txt_SellingPrice.Text = "" Or txt_OriginalPrice.Text = "" Then
+        If txt_StockName.Text = "" Or txt_Stock.Text = "" Or txt_Color.Text = "" Or txt_SellingPrice.Text = "" Or txt_OriginalPrice.Text = "" Then
             MessageBox.Show("Please fill the required field/s.", "Invalid", MessageBoxButtons.OK, MessageBoxIcon.Warning)
         Else
             Try

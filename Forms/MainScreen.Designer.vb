@@ -34,6 +34,19 @@ Partial Class btnAdd
         Me.OMSys_OrdersV2DBBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.OMSysOrdersDBDataSet = New OMSys.OMSysOrdersDBDataSet()
         Me.OMSys_OrdersV2DBDataGridView = New System.Windows.Forms.DataGridView()
+        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Date_Added = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Customer_FirstName = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Customer_MiddleName = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Customer_LastName = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Date_Delivered = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.OMSys_OrdersDBBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.OMSys_OrdersDBTableAdapter = New OMSys.OMSysOrdersDBDataSetTableAdapters.OMSys_OrdersDBTableAdapter()
         Me.TableAdapterManager = New OMSys.OMSysOrdersDBDataSetTableAdapters.TableAdapterManager()
@@ -81,19 +94,6 @@ Partial Class btnAdd
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Label15 = New System.Windows.Forms.Label()
-        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Date_Added = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Customer_FirstName = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Customer_MiddleName = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Customer_LastName = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Date_Delivered = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.OMSys_OrdersV2DBBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.OMSysOrdersDBDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.OMSys_OrdersV2DBDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -202,6 +202,126 @@ Partial Class btnAdd
         Me.OMSys_OrdersV2DBDataGridView.RowHeadersWidth = 51
         Me.OMSys_OrdersV2DBDataGridView.Size = New System.Drawing.Size(1668, 405)
         Me.OMSys_OrdersV2DBDataGridView.TabIndex = 94
+        '
+        'DataGridViewTextBoxColumn1
+        '
+        Me.DataGridViewTextBoxColumn1.DataPropertyName = "ID"
+        Me.DataGridViewTextBoxColumn1.HeaderText = "Order ID"
+        Me.DataGridViewTextBoxColumn1.MinimumWidth = 6
+        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
+        Me.DataGridViewTextBoxColumn1.ReadOnly = True
+        Me.DataGridViewTextBoxColumn1.Width = 125
+        '
+        'Date_Added
+        '
+        Me.Date_Added.DataPropertyName = "Date_Added"
+        Me.Date_Added.HeaderText = "Date Added"
+        Me.Date_Added.MinimumWidth = 6
+        Me.Date_Added.Name = "Date_Added"
+        Me.Date_Added.ReadOnly = True
+        Me.Date_Added.Width = 150
+        '
+        'Customer_FirstName
+        '
+        Me.Customer_FirstName.DataPropertyName = "Customer_FirstName"
+        Me.Customer_FirstName.HeaderText = "First Name"
+        Me.Customer_FirstName.MinimumWidth = 6
+        Me.Customer_FirstName.Name = "Customer_FirstName"
+        Me.Customer_FirstName.ReadOnly = True
+        Me.Customer_FirstName.Width = 125
+        '
+        'Customer_MiddleName
+        '
+        Me.Customer_MiddleName.DataPropertyName = "Customer_MiddleName"
+        Me.Customer_MiddleName.HeaderText = "Middle Name"
+        Me.Customer_MiddleName.MinimumWidth = 6
+        Me.Customer_MiddleName.Name = "Customer_MiddleName"
+        Me.Customer_MiddleName.ReadOnly = True
+        Me.Customer_MiddleName.Width = 125
+        '
+        'Customer_LastName
+        '
+        Me.Customer_LastName.DataPropertyName = "Customer_LastName"
+        Me.Customer_LastName.HeaderText = "Last Name"
+        Me.Customer_LastName.MinimumWidth = 6
+        Me.Customer_LastName.Name = "Customer_LastName"
+        Me.Customer_LastName.ReadOnly = True
+        Me.Customer_LastName.Width = 125
+        '
+        'DataGridViewTextBoxColumn3
+        '
+        Me.DataGridViewTextBoxColumn3.DataPropertyName = "Product_Name"
+        Me.DataGridViewTextBoxColumn3.HeaderText = "Product Name"
+        Me.DataGridViewTextBoxColumn3.MinimumWidth = 6
+        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
+        Me.DataGridViewTextBoxColumn3.ReadOnly = True
+        Me.DataGridViewTextBoxColumn3.Width = 150
+        '
+        'DataGridViewTextBoxColumn4
+        '
+        Me.DataGridViewTextBoxColumn4.DataPropertyName = "Quantity"
+        Me.DataGridViewTextBoxColumn4.HeaderText = "Quantity"
+        Me.DataGridViewTextBoxColumn4.MinimumWidth = 6
+        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
+        Me.DataGridViewTextBoxColumn4.ReadOnly = True
+        Me.DataGridViewTextBoxColumn4.Width = 80
+        '
+        'DataGridViewTextBoxColumn5
+        '
+        Me.DataGridViewTextBoxColumn5.DataPropertyName = "Total_Price"
+        DataGridViewCellStyle2.Format = "C2"
+        DataGridViewCellStyle2.NullValue = Nothing
+        Me.DataGridViewTextBoxColumn5.DefaultCellStyle = DataGridViewCellStyle2
+        Me.DataGridViewTextBoxColumn5.HeaderText = "Total Price"
+        Me.DataGridViewTextBoxColumn5.MinimumWidth = 6
+        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
+        Me.DataGridViewTextBoxColumn5.ReadOnly = True
+        Me.DataGridViewTextBoxColumn5.Width = 125
+        '
+        'DataGridViewTextBoxColumn6
+        '
+        Me.DataGridViewTextBoxColumn6.DataPropertyName = "Address"
+        Me.DataGridViewTextBoxColumn6.HeaderText = "Address"
+        Me.DataGridViewTextBoxColumn6.MinimumWidth = 6
+        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
+        Me.DataGridViewTextBoxColumn6.ReadOnly = True
+        Me.DataGridViewTextBoxColumn6.Width = 160
+        '
+        'DataGridViewTextBoxColumn7
+        '
+        Me.DataGridViewTextBoxColumn7.DataPropertyName = "Contact_Number"
+        Me.DataGridViewTextBoxColumn7.HeaderText = "Contact Number"
+        Me.DataGridViewTextBoxColumn7.MinimumWidth = 6
+        Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
+        Me.DataGridViewTextBoxColumn7.ReadOnly = True
+        Me.DataGridViewTextBoxColumn7.Width = 150
+        '
+        'DataGridViewTextBoxColumn8
+        '
+        Me.DataGridViewTextBoxColumn8.DataPropertyName = "Notes"
+        Me.DataGridViewTextBoxColumn8.HeaderText = "Notes"
+        Me.DataGridViewTextBoxColumn8.MinimumWidth = 6
+        Me.DataGridViewTextBoxColumn8.Name = "DataGridViewTextBoxColumn8"
+        Me.DataGridViewTextBoxColumn8.ReadOnly = True
+        Me.DataGridViewTextBoxColumn8.Width = 150
+        '
+        'DataGridViewTextBoxColumn9
+        '
+        Me.DataGridViewTextBoxColumn9.DataPropertyName = "Status"
+        Me.DataGridViewTextBoxColumn9.HeaderText = "Status"
+        Me.DataGridViewTextBoxColumn9.MinimumWidth = 6
+        Me.DataGridViewTextBoxColumn9.Name = "DataGridViewTextBoxColumn9"
+        Me.DataGridViewTextBoxColumn9.ReadOnly = True
+        Me.DataGridViewTextBoxColumn9.Width = 110
+        '
+        'Date_Delivered
+        '
+        Me.Date_Delivered.DataPropertyName = "Date_Delivered"
+        Me.Date_Delivered.HeaderText = "Date Delivered"
+        Me.Date_Delivered.MinimumWidth = 6
+        Me.Date_Delivered.Name = "Date_Delivered"
+        Me.Date_Delivered.ReadOnly = True
+        Me.Date_Delivered.Width = 150
         '
         'OMSys_OrdersDBBindingSource
         '
@@ -670,124 +790,6 @@ Partial Class btnAdd
         Me.Label15.Size = New System.Drawing.Size(15, 19)
         Me.Label15.TabIndex = 139
         Me.Label15.Text = "*"
-        '
-        'DataGridViewTextBoxColumn1
-        '
-        Me.DataGridViewTextBoxColumn1.DataPropertyName = "ID"
-        Me.DataGridViewTextBoxColumn1.HeaderText = "Order ID"
-        Me.DataGridViewTextBoxColumn1.MinimumWidth = 6
-        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
-        Me.DataGridViewTextBoxColumn1.ReadOnly = True
-        '
-        'Date_Added
-        '
-        Me.Date_Added.DataPropertyName = "Date_Added"
-        Me.Date_Added.HeaderText = "Date Added"
-        Me.Date_Added.MinimumWidth = 6
-        Me.Date_Added.Name = "Date_Added"
-        Me.Date_Added.ReadOnly = True
-        Me.Date_Added.Width = 150
-        '
-        'Customer_FirstName
-        '
-        Me.Customer_FirstName.DataPropertyName = "Customer_FirstName"
-        Me.Customer_FirstName.HeaderText = "First Name"
-        Me.Customer_FirstName.MinimumWidth = 6
-        Me.Customer_FirstName.Name = "Customer_FirstName"
-        Me.Customer_FirstName.ReadOnly = True
-        Me.Customer_FirstName.Width = 125
-        '
-        'Customer_MiddleName
-        '
-        Me.Customer_MiddleName.DataPropertyName = "Customer_MiddleName"
-        Me.Customer_MiddleName.HeaderText = "Middle Name"
-        Me.Customer_MiddleName.MinimumWidth = 6
-        Me.Customer_MiddleName.Name = "Customer_MiddleName"
-        Me.Customer_MiddleName.ReadOnly = True
-        '
-        'Customer_LastName
-        '
-        Me.Customer_LastName.DataPropertyName = "Customer_LastName"
-        Me.Customer_LastName.HeaderText = "Last Name"
-        Me.Customer_LastName.MinimumWidth = 6
-        Me.Customer_LastName.Name = "Customer_LastName"
-        Me.Customer_LastName.ReadOnly = True
-        Me.Customer_LastName.Width = 125
-        '
-        'DataGridViewTextBoxColumn3
-        '
-        Me.DataGridViewTextBoxColumn3.DataPropertyName = "Product_Name"
-        Me.DataGridViewTextBoxColumn3.HeaderText = "Product Name"
-        Me.DataGridViewTextBoxColumn3.MinimumWidth = 6
-        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
-        Me.DataGridViewTextBoxColumn3.ReadOnly = True
-        Me.DataGridViewTextBoxColumn3.Width = 150
-        '
-        'DataGridViewTextBoxColumn4
-        '
-        Me.DataGridViewTextBoxColumn4.DataPropertyName = "Quantity"
-        Me.DataGridViewTextBoxColumn4.HeaderText = "Quantity"
-        Me.DataGridViewTextBoxColumn4.MinimumWidth = 6
-        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
-        Me.DataGridViewTextBoxColumn4.ReadOnly = True
-        Me.DataGridViewTextBoxColumn4.Width = 80
-        '
-        'DataGridViewTextBoxColumn5
-        '
-        Me.DataGridViewTextBoxColumn5.DataPropertyName = "Total_Price"
-        DataGridViewCellStyle2.Format = "C2"
-        DataGridViewCellStyle2.NullValue = Nothing
-        Me.DataGridViewTextBoxColumn5.DefaultCellStyle = DataGridViewCellStyle2
-        Me.DataGridViewTextBoxColumn5.HeaderText = "Total Price"
-        Me.DataGridViewTextBoxColumn5.MinimumWidth = 6
-        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
-        Me.DataGridViewTextBoxColumn5.ReadOnly = True
-        Me.DataGridViewTextBoxColumn5.Width = 125
-        '
-        'DataGridViewTextBoxColumn6
-        '
-        Me.DataGridViewTextBoxColumn6.DataPropertyName = "Address"
-        Me.DataGridViewTextBoxColumn6.HeaderText = "Address"
-        Me.DataGridViewTextBoxColumn6.MinimumWidth = 6
-        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
-        Me.DataGridViewTextBoxColumn6.ReadOnly = True
-        Me.DataGridViewTextBoxColumn6.Width = 160
-        '
-        'DataGridViewTextBoxColumn7
-        '
-        Me.DataGridViewTextBoxColumn7.DataPropertyName = "Contact_Number"
-        Me.DataGridViewTextBoxColumn7.HeaderText = "Contact Number"
-        Me.DataGridViewTextBoxColumn7.MinimumWidth = 6
-        Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
-        Me.DataGridViewTextBoxColumn7.ReadOnly = True
-        Me.DataGridViewTextBoxColumn7.Width = 150
-        '
-        'DataGridViewTextBoxColumn8
-        '
-        Me.DataGridViewTextBoxColumn8.DataPropertyName = "Notes"
-        Me.DataGridViewTextBoxColumn8.HeaderText = "Notes"
-        Me.DataGridViewTextBoxColumn8.MinimumWidth = 6
-        Me.DataGridViewTextBoxColumn8.Name = "DataGridViewTextBoxColumn8"
-        Me.DataGridViewTextBoxColumn8.ReadOnly = True
-        Me.DataGridViewTextBoxColumn8.Width = 150
-        '
-        'DataGridViewTextBoxColumn9
-        '
-        Me.DataGridViewTextBoxColumn9.DataPropertyName = "Status"
-        Me.DataGridViewTextBoxColumn9.HeaderText = "Status"
-        Me.DataGridViewTextBoxColumn9.MinimumWidth = 6
-        Me.DataGridViewTextBoxColumn9.Name = "DataGridViewTextBoxColumn9"
-        Me.DataGridViewTextBoxColumn9.ReadOnly = True
-        Me.DataGridViewTextBoxColumn9.Width = 110
-        '
-        'Date_Delivered
-        '
-        Me.Date_Delivered.DataPropertyName = "Date_Delivered"
-        Me.Date_Delivered.HeaderText = "Date Delivered"
-        Me.Date_Delivered.MinimumWidth = 6
-        Me.Date_Delivered.Name = "Date_Delivered"
-        Me.Date_Delivered.ReadOnly = True
-        Me.Date_Delivered.Width = 150
         '
         'btnAdd
         '

@@ -18,7 +18,7 @@
             'frmLogin.userPass = userPass2
             My.Settings.Password = userPass2
             My.Settings.Save()
-            Dim okay As DialogResult = MessageBox.Show("New password created successfully.", "Successful", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            Dim okay As DialogResult = MessageBox.Show("Password has been changed successfully!", "Successful", MessageBoxButtons.OK, MessageBoxIcon.Information)
             If okay = DialogResult.OK Then
                 Close()
             End If

@@ -28,7 +28,7 @@ Public Class frmMainScreen2
         dgv_styleRow()
     End Sub
     Private Sub btnDeleteOrder_Click_1(sender As Object, e As EventArgs) Handles btnDeleteOrder.Click
-        Dim choice As DialogResult = MessageBox.Show("Are you sure you want to delete this product?", "Delete", MessageBoxButtons.YesNo)
+        Dim choice As DialogResult = MessageBox.Show("Are you sure you want to delete this stock?", "Delete", MessageBoxButtons.YesNo)
         If choice = DialogResult.Yes Then
 
             Try

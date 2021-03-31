@@ -12,6 +12,19 @@
         'TODO: This line of code loads data into the 'OMSysOrdersDBDataSet.OMSys_OrdersV2DB' table. You can move, or remove it, as needed.
         Me.OMSys_OrdersV2DBTableAdapter.Fill(Me.OMSysOrdersDBDataSet.OMSys_OrdersV2DB)
         dgv_styleRow()
+
+        cmb_Status.Enabled = False
+        txt_ProductName.Enabled = False
+        txt_FirstName.Enabled = False
+        txt_MiddleName.Enabled = False
+        txt_LastName.Enabled = False
+        txt_Quantity.Enabled = False
+        txtPrice.Enabled = False
+        txt_Address.Enabled = False
+        txt_ContactNumber.Enabled = False
+        RichTextBox1.Enabled = False
+        DateTimePicker1.Enabled = False
+        DateTimePicker2.Enabled = False
     End Sub
     Private Sub OMSys_OrdersDBBindingNavigatorSaveItem_Click(sender As Object, e As EventArgs)
         Me.Validate()
@@ -41,6 +54,7 @@
 
         Me.OMSys_OrdersV2DBTableAdapter.Fill(Me.OMSysOrdersDBDataSet.OMSys_OrdersV2DB)
         Me.OMSys_OrdersV2DBBindingSource.RemoveFilter()
+        dgv_styleRow()
     End Sub
     Private Sub btnViewAll_Click(sender As Object, e As EventArgs) Handles btnViewAll.Click
         Call displayAll()
@@ -52,6 +66,18 @@
         OMSys_OrdersV2DBBindingSource.AddNew()
         cmb_Status.SelectedIndex = 0
         dgv_styleRow()
+        cmb_Status.Enabled = True
+        txt_ProductName.Enabled = True
+        txt_FirstName.Enabled = True
+        txt_MiddleName.Enabled = True
+        txt_LastName.Enabled = True
+        txt_Quantity.Enabled = True
+        txtPrice.Enabled = True
+        txt_Address.Enabled = True
+        txt_ContactNumber.Enabled = True
+        RichTextBox1.Enabled = True
+        DateTimePicker1.Enabled = True
+        DateTimePicker2.Enabled = True
     End Sub
     Private Sub btnSave_Click(sender As Object, e As EventArgs) Handles btnSave.Click
         If txt_ProductName.Text = "" Or txt_Quantity.Text = "" Or txt_LastName.Text = "" Or
@@ -64,6 +90,18 @@
                 OMSys_OrdersV2DBTableAdapter.Update(OMSysOrdersDBDataSet)
                 MessageBox.Show("Order saved!", "Successful", MessageBoxButtons.OK, MessageBoxIcon.Information)
                 dgv_styleRow()
+                cmb_Status.Enabled = False
+                txt_ProductName.Enabled = False
+                txt_FirstName.Enabled = False
+                txt_MiddleName.Enabled = False
+                txt_LastName.Enabled = False
+                txt_Quantity.Enabled = False
+                txtPrice.Enabled = False
+                txt_Address.Enabled = False
+                txt_ContactNumber.Enabled = False
+                RichTextBox1.Enabled = False
+                DateTimePicker1.Enabled = False
+                DateTimePicker2.Enabled = False
             Catch ex As Exception
                 ' MessageBox.Show("Database error, the application will restart to save the changes.", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Warning)
                 'Application.Restart()
@@ -72,6 +110,8 @@
             End Try
         End If
     End Sub
+
+
 
     Private Sub btnDelete_Click(sender As Object, e As EventArgs) Handles btnDelete.Click
         Dim choice As DialogResult = MessageBox.Show("Are you sure you want to delete this order?", "Delete", MessageBoxButtons.YesNo)
@@ -110,11 +150,28 @@
                 With OMSys_OrdersV2DBDataGridView
                     .DataSource = OMSys_OrdersV2DBBindingSource
                 End With
+                dgv_styleRow()
             Else
                 MessageBox.Show("Nothing found.", "Search Result", MessageBoxButtons.OK, MessageBoxIcon.Warning)
                 'OMSys_OrdersV2DBBindingSource = Nothing
                 Call displayAll()
             End If
         End If
+    End Sub
+
+    Private Sub OMSys_OrdersV2DBDataGridView_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles OMSys_OrdersV2DBDataGridView.CellClick
+
+        cmb_Status.Enabled = True
+        txt_ProductName.Enabled = True
+        txt_FirstName.Enabled = True
+        txt_MiddleName.Enabled = True
+        txt_LastName.Enabled = True
+        txt_Quantity.Enabled = True
+        txtPrice.Enabled = True
+        txt_Address.Enabled = True
+        txt_ContactNumber.Enabled = True
+        RichTextBox1.Enabled = True
+        DateTimePicker1.Enabled = True
+        DateTimePicker2.Enabled = True
     End Sub
 End Class

@@ -24,7 +24,7 @@ Public Class frmMainScreen2
     Private Sub btnAddOrder_Click(sender As Object, e As EventArgs) Handles btnAddOrder.Click
         date_added.Checked = False
         OMSysStocksDBBindingSource.AddNew()
-        cmb_Size.SelectedIndex = -1
+        cmb_Size.SelectedIndex = 0
         dgv_styleRow()
     End Sub
     Private Sub btnDeleteOrder_Click_1(sender As Object, e As EventArgs) Handles btnDeleteOrder.Click

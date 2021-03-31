@@ -174,4 +174,20 @@
         DateTimePicker1.Enabled = True
         DateTimePicker2.Enabled = True
     End Sub
+
+    Private Sub btnClearFields_Click(sender As Object, e As EventArgs) Handles btnClearFields.Click
+        Dim choice As DialogResult = MessageBox.Show("Are you sure you want to clear all the fields?", "Clear Fields", MessageBoxButtons.YesNo)
+        If choice = DialogResult.Yes Then
+
+            txt_ProductName.Text = ""
+            txt_FirstName.Text = ""
+            txt_MiddleName.Text = ""
+            txt_LastName.Text = ""
+            txt_Quantity.Text = ""
+            txtPrice.Text = ""
+            txt_Address.Text = ""
+            txt_ContactNumber.Text = ""
+            RichTextBox1.Text = ""
+        End If
+    End Sub
 End Class

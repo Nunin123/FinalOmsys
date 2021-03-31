@@ -13,6 +13,14 @@ Public Class frmMainScreen2
     Private Sub frmMainScreen_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.OMSys_StocksDBTableAdapter.Fill(Me.OMSysOrdersDBDataSet.OMSys_StocksDB)
         dgv_styleRow()
+
+        date_added.Enabled = False
+        txt_StockName.Enabled = False
+        txt_Stock.Enabled = False
+        txt_Color.Enabled = False
+        txt_OriginalPrice.Enabled = False
+        txt_SellingPrice.Enabled = False
+        cmb_Size.Enabled = False
     End Sub
 
     Private Sub OMSysStocksDBBindingNavigatorSaveItem_Click(sender As Object, e As EventArgs)
@@ -26,6 +34,13 @@ Public Class frmMainScreen2
         OMSysStocksDBBindingSource.AddNew()
         cmb_Size.SelectedIndex = 0
         dgv_styleRow()
+        date_added.Enabled = True
+        txt_StockName.Enabled = True
+        txt_Stock.Enabled = True
+        txt_Color.Enabled = True
+        txt_OriginalPrice.Enabled = True
+        txt_SellingPrice.Enabled = True
+        cmb_Size.Enabled = True
     End Sub
     Private Sub btnDeleteOrder_Click_1(sender As Object, e As EventArgs) Handles btnDeleteOrder.Click
         Dim choice As DialogResult = MessageBox.Show("Are you sure you want to delete this stock?", "Delete", MessageBoxButtons.YesNo)
@@ -56,6 +71,14 @@ Public Class frmMainScreen2
                 OMSys_StocksDBTableAdapter.Update(OMSysOrdersDBDataSet)
                 MessageBox.Show("Stock saved!", "Successful", MessageBoxButtons.OK, MessageBoxIcon.Information)
                 dgv_styleRow()
+
+                date_added.Enabled = False
+                txt_StockName.Enabled = False
+                txt_Stock.Enabled = False
+                txt_Color.Enabled = False
+                txt_OriginalPrice.Enabled = False
+                txt_SellingPrice.Enabled = False
+                cmb_Size.Enabled = False
             Catch ex As Exception
                 'MessageBox.Show("Database error, the application will restart to save the changes.", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Warning)
                 'Application.Restart()
@@ -82,6 +105,7 @@ Public Class frmMainScreen2
                 With DataGridView1
                     .DataSource = OMSysStocksDBBindingSource
                 End With
+                dgv_styleRow()
             Else
                 MessageBox.Show("Nothing found.", "Search Result", MessageBoxButtons.OK, MessageBoxIcon.Warning)
                 'OMSys_OrdersV2DBBindingSource = Nothing
@@ -97,6 +121,7 @@ Public Class frmMainScreen2
 
         Me.OMSys_StocksDBTableAdapter.Fill(Me.OMSysOrdersDBDataSet.OMSys_StocksDB)
         Me.OMSysStocksDBBindingSource.RemoveFilter()
+        dgv_styleRow()
     End Sub
     Private Sub btnViewAll_Click(sender As Object, e As EventArgs) Handles btnViewAll.Click
         Call displayAll()
@@ -106,5 +131,17 @@ Public Class frmMainScreen2
         dgv_styleRow()
     End Sub
 
+    Private Sub DataGridView1_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellClick
+        date_added.Enabled = True
+        txt_StockName.Enabled = True
+        txt_Stock.Enabled = True
+        txt_Color.Enabled = True
+        txt_OriginalPrice.Enabled = True
+        txt_SellingPrice.Enabled = True
+        cmb_Size.Enabled = True
+    End Sub
 
+    Private Sub frmMainScreen2_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
+        frmMain.Show()
+    End Sub
 End Class

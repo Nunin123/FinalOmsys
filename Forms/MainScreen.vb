@@ -13,6 +13,20 @@
         Me.OMSys_OrdersV2DBTableAdapter.Fill(Me.OMSysOrdersDBDataSet.OMSys_OrdersV2DB)
         dgv_styleRow()
 
+        Dim myFNames = From n In OMSysOrdersDBDataSet.OMSys_OrdersV2DB Select n.Customer_FirstName
+
+        txt_FirstName.AutoCompleteMode = AutoCompleteMode.SuggestAppend
+        txt_FirstName.AutoCompleteSource = AutoCompleteSource.CustomSource
+
+        txt_FirstName.AutoCompleteCustomSource.AddRange(myFNames.ToArray())
+
+        Dim myLNames = From n In OMSysOrdersDBDataSet.OMSys_OrdersV2DB Select n.Customer_LastName
+
+        txt_LastName.AutoCompleteMode = AutoCompleteMode.SuggestAppend
+        txt_LastName.AutoCompleteSource = AutoCompleteSource.CustomSource
+
+        txt_LastName.AutoCompleteCustomSource.AddRange(myLNames.ToArray())
+
         cmb_Status.Enabled = False
         txt_ProductName.Enabled = False
         txt_FirstName.Enabled = False

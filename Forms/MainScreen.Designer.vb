@@ -23,12 +23,12 @@ Partial Class frmMainScreen
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle19 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle23 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle24 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle20 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle21 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle22 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.TableAdapterManager1 = New OMSys.OMSysOrdersDBDataSetTableAdapters.TableAdapterManager()
         Me.OmSys_OrdersDBTableAdapter1 = New OMSys.OMSysOrdersDBDataSetTableAdapters.OMSys_OrdersDBTableAdapter()
         Me.OMSysStocksDBBindingSource = New System.Windows.Forms.BindingSource(Me.components)
@@ -429,7 +429,7 @@ Partial Class frmMainScreen
         Me.btnAddOrder1.BackColor = System.Drawing.Color.DarkCyan
         Me.btnAddOrder1.Font = New System.Drawing.Font("Century Gothic", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnAddOrder1.ForeColor = System.Drawing.Color.White
-        Me.btnAddOrder1.Location = New System.Drawing.Point(1421, 51)
+        Me.btnAddOrder1.Location = New System.Drawing.Point(1415, 51)
         Me.btnAddOrder1.Margin = New System.Windows.Forms.Padding(4)
         Me.btnAddOrder1.Name = "btnAddOrder1"
         Me.btnAddOrder1.Size = New System.Drawing.Size(112, 42)
@@ -680,40 +680,40 @@ Partial Class frmMainScreen
         Me.OMSys_OrdersV2DBDataGridView.AutoGenerateColumns = False
         Me.OMSys_OrdersV2DBDataGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical
         Me.OMSys_OrdersV2DBDataGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle19.BackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(52, Byte), Integer), CType(CType(52, Byte), Integer))
-        DataGridViewCellStyle19.Font = New System.Drawing.Font("Century Gothic", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle19.ForeColor = System.Drawing.SystemColors.Info
-        DataGridViewCellStyle19.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle19.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.OMSys_OrdersV2DBDataGridView.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle19
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(52, Byte), Integer), CType(CType(52, Byte), Integer))
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Century Gothic", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.Info
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.OMSys_OrdersV2DBDataGridView.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.OMSys_OrdersV2DBDataGridView.ColumnHeadersHeight = 29
         Me.OMSys_OrdersV2DBDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
         Me.OMSys_OrdersV2DBDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.Date_Added, Me.Customer_FirstName, Me.Customer_MiddleName, Me.Customer_LastName, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7, Me.DataGridViewTextBoxColumn8, Me.DataGridViewTextBoxColumn9, Me.Date_Delivered})
         Me.OMSys_OrdersV2DBDataGridView.DataSource = Me.OMSys_OrdersV2DBBindingSource
-        DataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle23.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle23.Font = New System.Drawing.Font("Century Gothic", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle23.ForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle23.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle23.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.OMSys_OrdersV2DBDataGridView.DefaultCellStyle = DataGridViewCellStyle23
+        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle5.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle5.Font = New System.Drawing.Font("Century Gothic", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.OMSys_OrdersV2DBDataGridView.DefaultCellStyle = DataGridViewCellStyle5
         Me.OMSys_OrdersV2DBDataGridView.EnableHeadersVisualStyles = False
-        Me.OMSys_OrdersV2DBDataGridView.Location = New System.Drawing.Point(13, 104)
+        Me.OMSys_OrdersV2DBDataGridView.Location = New System.Drawing.Point(13, 111)
         Me.OMSys_OrdersV2DBDataGridView.Margin = New System.Windows.Forms.Padding(4)
         Me.OMSys_OrdersV2DBDataGridView.Name = "OMSys_OrdersV2DBDataGridView"
         Me.OMSys_OrdersV2DBDataGridView.ReadOnly = True
         Me.OMSys_OrdersV2DBDataGridView.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle24.BackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(52, Byte), Integer), CType(CType(52, Byte), Integer))
-        DataGridViewCellStyle24.Font = New System.Drawing.Font("Century Gothic", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle24.ForeColor = System.Drawing.SystemColors.Info
-        DataGridViewCellStyle24.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle24.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.OMSys_OrdersV2DBDataGridView.RowHeadersDefaultCellStyle = DataGridViewCellStyle24
+        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(52, Byte), Integer), CType(CType(52, Byte), Integer))
+        DataGridViewCellStyle6.Font = New System.Drawing.Font("Century Gothic", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.Info
+        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.OMSys_OrdersV2DBDataGridView.RowHeadersDefaultCellStyle = DataGridViewCellStyle6
         Me.OMSys_OrdersV2DBDataGridView.RowHeadersVisible = False
         Me.OMSys_OrdersV2DBDataGridView.RowHeadersWidth = 51
         Me.OMSys_OrdersV2DBDataGridView.Size = New System.Drawing.Size(1514, 405)
@@ -731,9 +731,9 @@ Partial Class frmMainScreen
         'Date_Added
         '
         Me.Date_Added.DataPropertyName = "Date_Added"
-        DataGridViewCellStyle20.Format = "D"
-        DataGridViewCellStyle20.NullValue = Nothing
-        Me.Date_Added.DefaultCellStyle = DataGridViewCellStyle20
+        DataGridViewCellStyle2.Format = "D"
+        DataGridViewCellStyle2.NullValue = Nothing
+        Me.Date_Added.DefaultCellStyle = DataGridViewCellStyle2
         Me.Date_Added.HeaderText = "Date Added"
         Me.Date_Added.MinimumWidth = 6
         Me.Date_Added.Name = "Date_Added"
@@ -788,9 +788,9 @@ Partial Class frmMainScreen
         'DataGridViewTextBoxColumn5
         '
         Me.DataGridViewTextBoxColumn5.DataPropertyName = "Total_Price"
-        DataGridViewCellStyle21.Format = "C2"
-        DataGridViewCellStyle21.NullValue = Nothing
-        Me.DataGridViewTextBoxColumn5.DefaultCellStyle = DataGridViewCellStyle21
+        DataGridViewCellStyle3.Format = "C2"
+        DataGridViewCellStyle3.NullValue = Nothing
+        Me.DataGridViewTextBoxColumn5.DefaultCellStyle = DataGridViewCellStyle3
         Me.DataGridViewTextBoxColumn5.HeaderText = "Total Price"
         Me.DataGridViewTextBoxColumn5.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
@@ -836,9 +836,9 @@ Partial Class frmMainScreen
         'Date_Delivered
         '
         Me.Date_Delivered.DataPropertyName = "Date_Delivered"
-        DataGridViewCellStyle22.Format = "D"
-        DataGridViewCellStyle22.NullValue = Nothing
-        Me.Date_Delivered.DefaultCellStyle = DataGridViewCellStyle22
+        DataGridViewCellStyle4.Format = "D"
+        DataGridViewCellStyle4.NullValue = Nothing
+        Me.Date_Delivered.DefaultCellStyle = DataGridViewCellStyle4
         Me.Date_Delivered.HeaderText = "Date Delivered"
         Me.Date_Delivered.MinimumWidth = 6
         Me.Date_Delivered.Name = "Date_Delivered"
@@ -859,7 +859,7 @@ Partial Class frmMainScreen
         Me.lblOrderMgmtSys.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.lblOrderMgmtSys.AutoSize = True
         Me.lblOrderMgmtSys.Font = New System.Drawing.Font("Century Gothic", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblOrderMgmtSys.Location = New System.Drawing.Point(1265, 791)
+        Me.lblOrderMgmtSys.Location = New System.Drawing.Point(1263, 735)
         Me.lblOrderMgmtSys.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblOrderMgmtSys.Name = "lblOrderMgmtSys"
         Me.lblOrderMgmtSys.Size = New System.Drawing.Size(209, 19)
@@ -871,7 +871,7 @@ Partial Class frmMainScreen
         Me.lblOMSYS.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.lblOMSYS.AutoSize = True
         Me.lblOMSYS.Font = New System.Drawing.Font("Century Gothic", 48.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblOMSYS.Location = New System.Drawing.Point(1218, 681)
+        Me.lblOMSYS.Location = New System.Drawing.Point(1216, 625)
         Me.lblOMSYS.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblOMSYS.Name = "lblOMSYS"
         Me.lblOMSYS.Size = New System.Drawing.Size(315, 96)

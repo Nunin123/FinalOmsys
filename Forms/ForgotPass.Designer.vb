@@ -36,10 +36,10 @@ Partial Class ForgotPass
         Me.lblNewPass = New System.Windows.Forms.Label()
         Me.lblResetPass = New System.Windows.Forms.Label()
         Me.panelSecQuestion = New System.Windows.Forms.Panel()
+        Me.lblSecQues = New System.Windows.Forms.Label()
         Me.txtSecQAnswer = New System.Windows.Forms.TextBox()
         Me.lblSecQuestion = New System.Windows.Forms.Label()
         Me.btnSubmitSecQA = New System.Windows.Forms.Button()
-        Me.lblSecQues = New System.Windows.Forms.Label()
         Me.panelMasterKey.SuspendLayout()
         Me.panelResetPass.SuspendLayout()
         Me.panelSecQuestion.SuspendLayout()
@@ -196,6 +196,15 @@ Partial Class ForgotPass
         Me.panelSecQuestion.TabIndex = 9
         Me.panelSecQuestion.Visible = False
         '
+        'lblSecQues
+        '
+        Me.lblSecQues.AutoSize = True
+        Me.lblSecQues.Location = New System.Drawing.Point(186, 37)
+        Me.lblSecQues.Name = "lblSecQues"
+        Me.lblSecQues.Size = New System.Drawing.Size(152, 21)
+        Me.lblSecQues.TabIndex = 3
+        Me.lblSecQues.Text = "Security Question"
+        '
         'txtSecQAnswer
         '
         Me.txtSecQAnswer.Location = New System.Drawing.Point(133, 177)
@@ -217,21 +226,12 @@ Partial Class ForgotPass
         Me.btnSubmitSecQA.BackColor = System.Drawing.Color.DarkCyan
         Me.btnSubmitSecQA.Font = New System.Drawing.Font("Century Gothic", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnSubmitSecQA.ForeColor = System.Drawing.Color.White
-        Me.btnSubmitSecQA.Location = New System.Drawing.Point(222, 244)
+        Me.btnSubmitSecQA.Location = New System.Drawing.Point(218, 237)
         Me.btnSubmitSecQA.Name = "btnSubmitSecQA"
-        Me.btnSubmitSecQA.Size = New System.Drawing.Size(80, 40)
+        Me.btnSubmitSecQA.Size = New System.Drawing.Size(90, 41)
         Me.btnSubmitSecQA.TabIndex = 0
         Me.btnSubmitSecQA.Text = "Submit"
         Me.btnSubmitSecQA.UseVisualStyleBackColor = False
-        '
-        'lblSecQues
-        '
-        Me.lblSecQues.AutoSize = True
-        Me.lblSecQues.Location = New System.Drawing.Point(186, 37)
-        Me.lblSecQues.Name = "lblSecQues"
-        Me.lblSecQues.Size = New System.Drawing.Size(152, 21)
-        Me.lblSecQues.TabIndex = 3
-        Me.lblSecQues.Text = "Security Question"
         '
         'ForgotPass
         '

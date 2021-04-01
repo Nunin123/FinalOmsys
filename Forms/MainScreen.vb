@@ -122,9 +122,12 @@
 
     End Sub
     Private Sub txt_Quantity_TextChanged(sender As Object, e As EventArgs) Handles txt_Quantity.TextChanged
-        Dim total As Decimal
+        Dim total, price, quantity As Decimal
 
-        total = Val(txtPrice.Text) * Val(txt_Quantity.Text)
+        price = Val(txtPrice.Text)
+        quantity = Val(txt_Quantity.Text)
+
+        total = price * quantity
         txt_TotalPrice.Text = total
     End Sub
 
@@ -198,6 +201,15 @@
     End Sub
 
     Private Sub txt_Quantity_KeyDown(sender As Object, e As KeyEventArgs) Handles txt_Quantity.KeyDown
+        If Char.IsDigit(Chr(e.KeyValue)) Or e.KeyData = Keys.Delete Or e.KeyData = Keys.Left Or
+            e.KeyData = Keys.Right Or e.KeyData = Keys.Back Then
+            e.SuppressKeyPress = False
+        Else
+            e.SuppressKeyPress = True
+        End If
+    End Sub
+
+    Private Sub txt_ContactNumber_KeyDown(sender As Object, e As KeyEventArgs) Handles txt_ContactNumber.KeyDown
         If Char.IsDigit(Chr(e.KeyValue)) Or e.KeyData = Keys.Delete Or e.KeyData = Keys.Left Or
             e.KeyData = Keys.Right Or e.KeyData = Keys.Back Then
             e.SuppressKeyPress = False

@@ -2,11 +2,11 @@
 Public Class frmMainScreen2
     Dim yes As Boolean = False
     Sub dgv_styleRow()
-        For i As Integer = 0 To DataGridView1.RowCount - 1
+        For i As Integer = 0 To dgvStocks.RowCount - 1
             If i Mod 2 = 0 Then
-                DataGridView1.Rows(i).DefaultCellStyle.BackColor = System.Drawing.Color.White
+                dgvStocks.Rows(i).DefaultCellStyle.BackColor = System.Drawing.Color.White
             Else
-                DataGridView1.Rows(i).DefaultCellStyle.BackColor = System.Drawing.Color.LightGray
+                dgvStocks.Rows(i).DefaultCellStyle.BackColor = System.Drawing.Color.LightGray
             End If
         Next
     End Sub
@@ -23,13 +23,7 @@ Public Class frmMainScreen2
         cmb_Size.Enabled = False
     End Sub
 
-    Private Sub OMSysStocksDBBindingNavigatorSaveItem_Click(sender As Object, e As EventArgs)
-        Me.Validate()
-        Me.OMSysStocksDBBindingSource.EndEdit()
-        Me.TableAdapterManager.UpdateAll(Me.OMSysOrdersDBDataSet)
-    End Sub
-
-    Private Sub btnAddOrder_Click(sender As Object, e As EventArgs) Handles btnAddOrder.Click
+    Private Sub btnAddStock_Click(sender As Object, e As EventArgs) Handles btnAddStock.Click
         date_added.Checked = False
         OMSysStocksDBBindingSource.AddNew()
         cmb_Size.SelectedIndex = 0
@@ -89,9 +83,9 @@ Public Class frmMainScreen2
 
     End Sub
 
-    Private Sub Date_AddedDateTimePicker_ValueChanged(sender As Object, e As EventArgs)
-        yes = True
-    End Sub
+    'Private Sub Date_AddedDateTimePicker_ValueChanged(sender As Object, e As EventArgs)
+    '    yes = True
+    'End Sub
 
     Private Sub btnSearch_Click(sender As Object, e As EventArgs) Handles btnSearch.Click
         If txtSearch.Text = "" Then
@@ -99,10 +93,11 @@ Public Class frmMainScreen2
             Exit Sub
         Else
             OMSysStocksDBBindingSource.Filter = "(Convert(ID, 'System.String') LIKE '" & txtSearch.Text & "')" &
-                "OR (Material_Name LIKE '" & txtSearch.Text & "')"
+                "OR (Material_Name LIKE '" & txtSearch.Text & "')" & "OR (Size LIKE '" & txtSearch.Text & "')" &
+                "OR (Color LIKE '" & txtSearch.Text & "')"
 
             If OMSysStocksDBBindingSource.Count <> 0 Then
-                With DataGridView1
+                With dgvStocks
                     .DataSource = OMSysStocksDBBindingSource
                 End With
                 dgv_styleRow()
@@ -127,11 +122,11 @@ Public Class frmMainScreen2
         Call displayAll()
     End Sub
 
-    Private Sub DataGridView1_DataSourceChanged(sender As Object, e As EventArgs) Handles DataGridView1.DataSourceChanged
+    Private Sub DataGridView1_DataSourceChanged(sender As Object, e As EventArgs) Handles dgvStocks.DataSourceChanged
         dgv_styleRow()
     End Sub
 
-    Private Sub DataGridView1_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellClick
+    Private Sub DataGridView1_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvStocks.CellClick
         date_added.Enabled = True
         txt_StockName.Enabled = True
         txt_Stock.Enabled = True
@@ -143,5 +138,32 @@ Public Class frmMainScreen2
 
     Private Sub frmMainScreen2_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
         frmMain.Show()
+    End Sub
+
+    Private Sub txt_Stock_KeyDown(sender As Object, e As KeyEventArgs) Handles txt_Stock.KeyDown
+        If Char.IsDigit(Chr(e.KeyValue)) Or e.KeyData = Keys.Delete Or e.KeyData = Keys.Left Or
+            e.KeyData = Keys.Right Or e.KeyData = Keys.Back Then
+            e.SuppressKeyPress = False
+        Else
+            e.SuppressKeyPress = True
+        End If
+    End Sub
+
+    Private Sub txt_SellingPrice_KeyDown(sender As Object, e As KeyEventArgs) Handles txt_SellingPrice.KeyDown
+        If Char.IsDigit(Chr(e.KeyValue)) Or e.KeyData = Keys.Delete Or e.KeyData = Keys.Left Or
+            e.KeyData = Keys.Right Or e.KeyData = Keys.Back Then
+            e.SuppressKeyPress = False
+        Else
+            e.SuppressKeyPress = True
+        End If
+    End Sub
+
+    Private Sub txt_OriginalPrice_KeyDown(sender As Object, e As KeyEventArgs) Handles txt_OriginalPrice.KeyDown
+        If Char.IsDigit(Chr(e.KeyValue)) Or e.KeyData = Keys.Delete Or e.KeyData = Keys.Left Or
+            e.KeyData = Keys.Right Or e.KeyData = Keys.Back Then
+            e.SuppressKeyPress = False
+        Else
+            e.SuppressKeyPress = True
+        End If
     End Sub
 End Class

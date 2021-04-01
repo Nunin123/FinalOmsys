@@ -1,6 +1,6 @@
 ﻿Public Class frmMain
     Private Sub btnManageOrder_Click(sender As Object, e As EventArgs) Handles btnManageOrder.Click
-        Dim ManageOrder As New btnAdd
+        Dim ManageOrder As New frmMainScreen
         ManageOrder.Show()
         Close()
     End Sub
@@ -15,7 +15,7 @@
 
         Dim LoginForm As New frmLogin
 
-        Dim choice As DialogResult = MessageBox.Show("Are you sure want to logout?", "Logout Confirmation", MessageBoxButtons.YesNo)
+        Dim choice As DialogResult = MessageBox.Show("Are you sure want to logout?", "Logout Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Information)
         If choice = DialogResult.Yes Then
             LoginForm.Show()
             Close()

@@ -1,4 +1,4 @@
-﻿Public Class btnAdd
+﻿Public Class frmMainScreen
     Sub dgv_styleRow()
         For i As Integer = 0 To OMSys_OrdersV2DBDataGridView.RowCount - 1
             If i Mod 2 = 0 Then
@@ -37,9 +37,9 @@
         txtPrice.Enabled = False
         txt_Address.Enabled = False
         txt_ContactNumber.Enabled = False
-        RichTextBox1.Enabled = False
-        DateTimePicker1.Enabled = False
-        DateTimePicker2.Enabled = False
+        txtNote.Enabled = False
+        dtpAdded.Enabled = False
+        dtpDelivered.Enabled = False
     End Sub
     Private Sub doNothing()
 
@@ -70,9 +70,9 @@
         txtPrice.Enabled = True
         txt_Address.Enabled = True
         txt_ContactNumber.Enabled = True
-        RichTextBox1.Enabled = True
-        DateTimePicker1.Enabled = True
-        DateTimePicker2.Enabled = True
+        txtNote.Enabled = True
+        dtpAdded.Enabled = True
+        dtpDelivered.Enabled = True
     End Sub
     Private Sub btnSave_Click(sender As Object, e As EventArgs) Handles btnSave.Click
         If txt_ProductName.Text = "" Or txt_Quantity.Text = "" Or txt_LastName.Text = "" Or
@@ -94,9 +94,9 @@
                 txtPrice.Enabled = False
                 txt_Address.Enabled = False
                 txt_ContactNumber.Enabled = False
-                RichTextBox1.Enabled = False
-                DateTimePicker1.Enabled = False
-                DateTimePicker2.Enabled = False
+                txtNote.Enabled = False
+                dtpAdded.Enabled = False
+                dtpDelivered.Enabled = False
             Catch ex As Exception
                 ' MessageBox.Show("Database error, the application will restart to save the changes.", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Warning)
                 'Application.Restart()
@@ -162,9 +162,9 @@
         txtPrice.Enabled = True
         txt_Address.Enabled = True
         txt_ContactNumber.Enabled = True
-        RichTextBox1.Enabled = True
-        DateTimePicker1.Enabled = True
-        DateTimePicker2.Enabled = True
+        txtNote.Enabled = True
+        dtpAdded.Enabled = True
+        dtpDelivered.Enabled = True
     End Sub
 
     Private Sub btnClearFields_Click(sender As Object, e As EventArgs) Handles btnClearFields.Click
@@ -179,11 +179,39 @@
             txtPrice.Text = ""
             txt_Address.Text = ""
             txt_ContactNumber.Text = ""
-            RichTextBox1.Text = ""
+            txtNote.Text = ""
         End If
     End Sub
 
-    Private Sub btnAdd_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
+    Private Sub frmMainScreen_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
         frmMain.Show()
     End Sub
+    Private Sub txtPrice_KeyDown(sender As Object, e As KeyEventArgs) Handles txtPrice.KeyDown
+
+        If Char.IsDigit(Chr(e.KeyValue)) Or e.KeyData = Keys.Delete Or e.KeyData = Keys.Left Or
+            e.KeyData = Keys.Right Or e.KeyData = Keys.Back Then
+            e.SuppressKeyPress = False
+        Else
+            e.SuppressKeyPress = True
+        End If
+
+    End Sub
+
+    Private Sub txt_Quantity_KeyDown(sender As Object, e As KeyEventArgs) Handles txt_Quantity.KeyDown
+        If Char.IsDigit(Chr(e.KeyValue)) Or e.KeyData = Keys.Delete Or e.KeyData = Keys.Left Or
+            e.KeyData = Keys.Right Or e.KeyData = Keys.Back Then
+            e.SuppressKeyPress = False
+        Else
+            e.SuppressKeyPress = True
+        End If
+    End Sub
+
+    'Private Sub txtPrice_TextChanged(sender As Object, e As EventArgs) Handles txtPrice.TextChanged
+    '    If txtPrice.Text = "" Then
+
+    '        'MessageBox.Show("Please input digits only", "Invalid", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+    '    ElseIf Not IsNumeric(txtPrice.Text) Then
+    '        MessageBox.Show("Please input digits only", "Invalid", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+    '    End If
+    'End Sub
 End Class

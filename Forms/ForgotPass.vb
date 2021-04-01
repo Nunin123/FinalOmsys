@@ -27,15 +27,15 @@
         End If
     End Sub
 
-    Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
+    Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles linklblAnotherWay.LinkClicked
         panelMasterKey.Visible = False
-        Panel1.Visible = True
+        panelSecQuestion.Visible = True
     End Sub
 
     Private Sub btnSubmitSecQA_Click(sender As Object, e As EventArgs) Handles btnSubmitSecQA.Click
         If txtSecQAnswer.Text = "Taco" Then
             panelResetPass.Visible = True
-            Panel1.Visible = False
+            panelSecQuestion.Visible = False
         ElseIf txtSecQAnswer.Text = "" Then
             MessageBox.Show("Please input an answer.", "Invalid", MessageBoxButtons.OK, MessageBoxIcon.Warning)
         Else

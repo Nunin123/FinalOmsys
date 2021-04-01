@@ -23,9 +23,9 @@ Partial Class frmMain
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.btnManageStock = New System.Windows.Forms.Button()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.lblWelcomeBack = New System.Windows.Forms.Label()
+        Me.lblOrderMgmtSys = New System.Windows.Forms.Label()
+        Me.lblOMSYS = New System.Windows.Forms.Label()
         Me.btnManageOrder = New System.Windows.Forms.Button()
         Me.btnLogout = New System.Windows.Forms.Button()
         Me.SuspendLayout()
@@ -43,38 +43,38 @@ Partial Class frmMain
         Me.btnManageStock.Text = "Manage Stocks"
         Me.btnManageStock.UseVisualStyleBackColor = False
         '
-        'Label3
+        'lblWelcomeBack
         '
-        Me.Label3.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(254, 243)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(157, 23)
-        Me.Label3.TabIndex = 8
-        Me.Label3.Text = "Welcome Back"
+        Me.lblWelcomeBack.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.lblWelcomeBack.AutoSize = True
+        Me.lblWelcomeBack.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblWelcomeBack.Location = New System.Drawing.Point(254, 243)
+        Me.lblWelcomeBack.Name = "lblWelcomeBack"
+        Me.lblWelcomeBack.Size = New System.Drawing.Size(157, 23)
+        Me.lblWelcomeBack.TabIndex = 8
+        Me.lblWelcomeBack.Text = "Welcome Back"
         '
-        'Label2
+        'lblOrderMgmtSys
         '
-        Me.Label2.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Century Gothic", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(222, 182)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(209, 19)
-        Me.Label2.TabIndex = 7
-        Me.Label2.Text = "ORDER MANAGEMENT SYSTEM"
+        Me.lblOrderMgmtSys.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.lblOrderMgmtSys.AutoSize = True
+        Me.lblOrderMgmtSys.Font = New System.Drawing.Font("Century Gothic", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblOrderMgmtSys.Location = New System.Drawing.Point(222, 182)
+        Me.lblOrderMgmtSys.Name = "lblOrderMgmtSys"
+        Me.lblOrderMgmtSys.Size = New System.Drawing.Size(209, 19)
+        Me.lblOrderMgmtSys.TabIndex = 7
+        Me.lblOrderMgmtSys.Text = "ORDER MANAGEMENT SYSTEM"
         '
-        'Label1
+        'lblOMSYS
         '
-        Me.Label1.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Century Gothic", 48.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(176, 86)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(315, 96)
-        Me.Label1.TabIndex = 6
-        Me.Label1.Text = "OMSYS"
+        Me.lblOMSYS.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.lblOMSYS.AutoSize = True
+        Me.lblOMSYS.Font = New System.Drawing.Font("Century Gothic", 48.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblOMSYS.Location = New System.Drawing.Point(176, 86)
+        Me.lblOMSYS.Name = "lblOMSYS"
+        Me.lblOMSYS.Size = New System.Drawing.Size(315, 96)
+        Me.lblOMSYS.TabIndex = 6
+        Me.lblOMSYS.Text = "OMSYS"
         '
         'btnManageOrder
         '
@@ -112,9 +112,9 @@ Partial Class frmMain
         Me.Controls.Add(Me.btnLogout)
         Me.Controls.Add(Me.btnManageOrder)
         Me.Controls.Add(Me.btnManageStock)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.lblWelcomeBack)
+        Me.Controls.Add(Me.lblOrderMgmtSys)
+        Me.Controls.Add(Me.lblOMSYS)
         Me.Name = "frmMain"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Welcome"
@@ -124,9 +124,9 @@ Partial Class frmMain
     End Sub
 
     Friend WithEvents btnManageStock As Button
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label1 As Label
+    Friend WithEvents lblWelcomeBack As Label
+    Friend WithEvents lblOrderMgmtSys As Label
+    Friend WithEvents lblOMSYS As Label
     Friend WithEvents btnManageOrder As Button
     Friend WithEvents btnLogout As Button
 End Class

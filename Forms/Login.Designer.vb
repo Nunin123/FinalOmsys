@@ -22,49 +22,49 @@ Partial Class frmLogin
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
+        Me.lblOMSYS = New System.Windows.Forms.Label()
+        Me.lblOrderMgmtSys = New System.Windows.Forms.Label()
+        Me.lblLogin = New System.Windows.Forms.Label()
         Me.txtUsername = New System.Windows.Forms.TextBox()
         Me.txtPassword = New System.Windows.Forms.TextBox()
         Me.btnLogin = New System.Windows.Forms.Button()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
+        Me.lblUsername = New System.Windows.Forms.Label()
+        Me.lblPassword = New System.Windows.Forms.Label()
+        Me.linklblForgotPass = New System.Windows.Forms.LinkLabel()
         Me.SuspendLayout()
         '
-        'Label1
+        'lblOMSYS
         '
-        Me.Label1.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Century Gothic", 48.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(184, 88)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(315, 96)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "OMSYS"
+        Me.lblOMSYS.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.lblOMSYS.AutoSize = True
+        Me.lblOMSYS.Font = New System.Drawing.Font("Century Gothic", 48.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblOMSYS.Location = New System.Drawing.Point(184, 88)
+        Me.lblOMSYS.Name = "lblOMSYS"
+        Me.lblOMSYS.Size = New System.Drawing.Size(315, 96)
+        Me.lblOMSYS.TabIndex = 0
+        Me.lblOMSYS.Text = "OMSYS"
         '
-        'Label2
+        'lblOrderMgmtSys
         '
-        Me.Label2.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Century Gothic", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(231, 184)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(209, 19)
-        Me.Label2.TabIndex = 1
-        Me.Label2.Text = "ORDER MANAGEMENT SYSTEM"
+        Me.lblOrderMgmtSys.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.lblOrderMgmtSys.AutoSize = True
+        Me.lblOrderMgmtSys.Font = New System.Drawing.Font("Century Gothic", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblOrderMgmtSys.Location = New System.Drawing.Point(231, 184)
+        Me.lblOrderMgmtSys.Name = "lblOrderMgmtSys"
+        Me.lblOrderMgmtSys.Size = New System.Drawing.Size(209, 19)
+        Me.lblOrderMgmtSys.TabIndex = 1
+        Me.lblOrderMgmtSys.Text = "ORDER MANAGEMENT SYSTEM"
         '
-        'Label3
+        'lblLogin
         '
-        Me.Label3.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(314, 236)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(60, 23)
-        Me.Label3.TabIndex = 2
-        Me.Label3.Text = "Login"
+        Me.lblLogin.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.lblLogin.AutoSize = True
+        Me.lblLogin.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblLogin.Location = New System.Drawing.Point(314, 236)
+        Me.lblLogin.Name = "lblLogin"
+        Me.lblLogin.Size = New System.Drawing.Size(60, 23)
+        Me.lblLogin.TabIndex = 2
+        Me.lblLogin.Text = "Login"
         '
         'txtUsername
         '
@@ -98,40 +98,40 @@ Partial Class frmLogin
         Me.btnLogin.Text = "Login"
         Me.btnLogin.UseVisualStyleBackColor = False
         '
-        'Label4
+        'lblUsername
         '
-        Me.Label4.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(142, 295)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(113, 23)
-        Me.Label4.TabIndex = 6
-        Me.Label4.Text = "Username:"
+        Me.lblUsername.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.lblUsername.AutoSize = True
+        Me.lblUsername.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblUsername.Location = New System.Drawing.Point(142, 295)
+        Me.lblUsername.Name = "lblUsername"
+        Me.lblUsername.Size = New System.Drawing.Size(113, 23)
+        Me.lblUsername.TabIndex = 6
+        Me.lblUsername.Text = "Username:"
         '
-        'Label5
+        'lblPassword
         '
-        Me.Label5.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(142, 355)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(108, 23)
-        Me.Label5.TabIndex = 7
-        Me.Label5.Text = "Password:"
+        Me.lblPassword.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.lblPassword.AutoSize = True
+        Me.lblPassword.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPassword.Location = New System.Drawing.Point(142, 355)
+        Me.lblPassword.Name = "lblPassword"
+        Me.lblPassword.Size = New System.Drawing.Size(108, 23)
+        Me.lblPassword.TabIndex = 7
+        Me.lblPassword.Text = "Password:"
         '
-        'LinkLabel1
+        'linklblForgotPass
         '
-        Me.LinkLabel1.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.LinkLabel1.AutoSize = True
-        Me.LinkLabel1.Font = New System.Drawing.Font("Century Gothic", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LinkLabel1.LinkColor = System.Drawing.Color.DarkCyan
-        Me.LinkLabel1.Location = New System.Drawing.Point(280, 489)
-        Me.LinkLabel1.Name = "LinkLabel1"
-        Me.LinkLabel1.Size = New System.Drawing.Size(127, 19)
-        Me.LinkLabel1.TabIndex = 3
-        Me.LinkLabel1.TabStop = True
-        Me.LinkLabel1.Text = "Forgot Password?"
+        Me.linklblForgotPass.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.linklblForgotPass.AutoSize = True
+        Me.linklblForgotPass.Font = New System.Drawing.Font("Century Gothic", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.linklblForgotPass.LinkColor = System.Drawing.Color.DarkCyan
+        Me.linklblForgotPass.Location = New System.Drawing.Point(280, 489)
+        Me.linklblForgotPass.Name = "linklblForgotPass"
+        Me.linklblForgotPass.Size = New System.Drawing.Size(127, 19)
+        Me.linklblForgotPass.TabIndex = 3
+        Me.linklblForgotPass.TabStop = True
+        Me.linklblForgotPass.Text = "Forgot Password?"
         '
         'frmLogin
         '
@@ -141,15 +141,15 @@ Partial Class frmLogin
         Me.AutoScroll = True
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(679, 548)
-        Me.Controls.Add(Me.LinkLabel1)
-        Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.linklblForgotPass)
+        Me.Controls.Add(Me.lblPassword)
+        Me.Controls.Add(Me.lblUsername)
         Me.Controls.Add(Me.btnLogin)
         Me.Controls.Add(Me.txtPassword)
         Me.Controls.Add(Me.txtUsername)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.lblLogin)
+        Me.Controls.Add(Me.lblOrderMgmtSys)
+        Me.Controls.Add(Me.lblOMSYS)
         Me.Name = "frmLogin"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Login"
@@ -158,13 +158,13 @@ Partial Class frmLogin
 
     End Sub
 
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label3 As Label
+    Friend WithEvents lblOMSYS As Label
+    Friend WithEvents lblOrderMgmtSys As Label
+    Friend WithEvents lblLogin As Label
     Friend WithEvents txtUsername As TextBox
     Friend WithEvents txtPassword As TextBox
     Friend WithEvents btnLogin As Button
-    Friend WithEvents Label4 As Label
-    Friend WithEvents Label5 As Label
-    Friend WithEvents LinkLabel1 As LinkLabel
+    Friend WithEvents lblUsername As Label
+    Friend WithEvents lblPassword As Label
+    Friend WithEvents linklblForgotPass As LinkLabel
 End Class

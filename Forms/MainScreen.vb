@@ -1,4 +1,5 @@
-﻿Public Class frmMainScreen
+﻿Imports System.Data.OleDb
+Public Class frmMainScreen
     Sub dgv_styleRow()
         For i As Integer = 0 To OMSys_OrdersV2DBDataGridView.RowCount - 1
             If i Mod 2 = 0 Then
@@ -218,12 +219,4 @@
         End If
     End Sub
 
-    'Private Sub txtPrice_TextChanged(sender As Object, e As EventArgs) Handles txtPrice.TextChanged
-    '    If txtPrice.Text = "" Then
-
-    '        'MessageBox.Show("Please input digits only", "Invalid", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-    '    ElseIf Not IsNumeric(txtPrice.Text) Then
-    '        MessageBox.Show("Please input digits only", "Invalid", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-    '    End If
-    'End Sub
 End Class
